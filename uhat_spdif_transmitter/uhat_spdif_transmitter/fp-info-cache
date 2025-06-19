@@ -1,4 +1,4 @@
-24819039472265230
+24822540543220331
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -66129,6 +66129,13 @@ QFN-48_L7.0-W7.0-P0.50-TL-EP5.4-1
 49
 49
 Locrius_KiCad
+Raspberry Pi Zero 2 W
+
+
+0
+0
+0
+Locrius_KiCad
 SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL
 
 
@@ -66149,6 +66156,13 @@ SOT-23-5_L3.0-W1.6-P0.95-LS2.8-BR
 0
 5
 5
+Locrius_KiCad
+SW-SMD_L6.0-W6.0-LS6.6
+
+
+0
+2
+2
 Locrius_KiCad
 TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL
 
