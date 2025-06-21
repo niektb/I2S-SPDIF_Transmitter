@@ -1,4 +1,4 @@
-24822540543220331
+24829542281571437
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -66080,6 +66080,20 @@ FBGA-256_L17.0-W17.0-R16-C16-P1.00-TL
 256
 256
 Locrius_KiCad
+KEY-SMD_SKRTLAE010
+
+
+0
+7
+5
+Locrius_KiCad
+LED-ARRAY-SMD_MHS110RGBCT
+
+
+0
+4
+4
+Locrius_KiCad
 LED-SMD_4P-L5.0-W5.0-LS5.4-TL-1
 
 
@@ -66101,12 +66115,26 @@ LQFP-48_L7.0-W7.0-P0.50-LS9.0-BL
 48
 48
 Locrius_KiCad
+OPTO-TH_PLR237-T10BK
+
+
+0
+5
+5
+Locrius_KiCad
 OPTO-TH_PLT131-T8
 
 
 0
 5
 3
+Locrius_KiCad
+OPTO-TH_PLT237_T10WH
+
+
+0
+5
+5
 Locrius_KiCad
 OSC-SMD_4P-L2.5-W2.0-BL
 
