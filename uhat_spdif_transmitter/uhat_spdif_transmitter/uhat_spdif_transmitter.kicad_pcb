@@ -100,7 +100,6 @@
 			(dielectric_constraints no)
 		)
 		(pad_to_mask_clearance 0.051)
-		(solder_mask_min_width 0.25)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(aux_axis_origin 117.532 121.068)
