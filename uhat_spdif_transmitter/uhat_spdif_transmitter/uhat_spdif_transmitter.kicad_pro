@@ -638,7 +638,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "uhat_spdif_transmitter.step",
       "svg": "",
       "vrml": ""
     },
