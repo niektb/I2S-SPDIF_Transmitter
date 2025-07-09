@@ -5084,7 +5084,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Locrius_KiCad:PLR237_T10BK"
+		(symbol "Locrius_KiCad:PLT237_T10WH"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -5140,7 +5140,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "PLR237_T10BK_0_1"
+			(symbol "PLT237_T10WH_0_1"
 				(rectangle
 					(start -6.35 5.08)
 					(end 6.35 -5.08)
@@ -5161,60 +5161,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -8.89 2.54 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -8.89 0 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -8.89 -2.54 0)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
 					)
 				)
 				(pin unspecified line
@@ -5246,6 +5192,62 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PLT237_T10WH_1_1"
+				(pin unspecified line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -14378,7 +14380,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Locrius_KiCad:PLR237_T10BK")
+		(lib_id "Locrius_KiCad:PLT237_T10WH")
 		(at 384.81 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15679,7 +15681,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Locrius_KiCad:PLR237_T10BK")
+		(lib_id "Locrius_KiCad:PLT237_T10WH")
 		(at 384.81 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
