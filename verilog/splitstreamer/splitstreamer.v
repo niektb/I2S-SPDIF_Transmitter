@@ -1,19 +1,141 @@
+//`define SIM
+
 module splitstreamer (
-    input wire pin_clk_24m576hz, // at some point, this should become the PLL output
+    input wire pin_i2s_bclk_pll, // at some point, this should become the PLL output
     input wire pin_i2s_fclk,
     input wire pin_i2s_bclk,
     input wire pin_i2s_data,
-    output reg pin_opt1,
-    output reg pin_opt2,
+    input wire pin_user_sw, // Active low reset
+    output wire red,
+    output wire pin_opt1
 );
 
+wire clk;
+wire pll_lock;
+wire smu_full;
+wire smu_empty;
+wire smu_write_en;
+wire smu_read_en;
+wire smu_rst;
+wire [31:0] fifo_in_data_left;
+wire [31:0] fifo_in_data_right;
+wire [31:0] fifo_out_data_left;
+wire [31:0] fifo_out_data_right;
+wire smu_validity;
 
+`ifndef SIM
+SB_PLL40_CORE #(
+    .FEEDBACK_PATH("SIMPLE"),
+    .DIVR(4'b0000), // Divide by 1
+    .DIVF(7'b0111111), // Multiply by 64
+    .DIVQ(3'b101), // Divide by 4
+    .FILTER_RANGE(3'b001) // Moderate filter range
+) pll_inst (
+    .REFERENCECLK(pin_i2s_bclk_pll),
+    .PLLOUTCORE(clk),
+    .RESETB(1'b1), // No reset
+    .BYPASS(1'b0), // Not bypassed
+    .LOCK(pll_lock) // Lock signal for PLL
+);
+`else
+assign clk = pin_i2s_bclk_pll; // For simulation, use the input
+assign pll_lock = 1'b1; // Simulate PLL lock
+`endif
 
-spdif_core
-ucore
+i2s_receive2 in (
+    .rst(smu_rst), // Assuming no reset for simplicity
+    .sck(pin_i2s_bclk),
+    .ws(pin_i2s_fclk),
+    .sd(pin_i2s_data),
+    .data_left(fifo_in_data_left),   // Left channel data output
+    .data_right(fifo_in_data_right)   // Right channel data output
+);
+
+fifo #(
+    .WORDSIZE(32),
+    .DEPTH(16)
+) buffer (
+    .rst(smu_rst), // Assuming no reset for simplicity
+    .clk(pin_i2s_fclk),
+    .write_en(smu_write_en), // Always write for this example
+    .read_en(smu_read_en),  // No read operation in this example
+    .data_left_in(fifo_in_data_left),
+    .data_right_in(fifo_in_data_right),
+    .data_left_out(fifo_out_data_left), // Not used in this example
+    .data_right_out(fifo_out_data_right), // Not used in this example
+    .full(smu_full), // Full signal not used in this example
+    .empty(smu_empty) // Empty signal not used in this example
+);
+
+// Instantiate the SPDIF transmitter
+spdif_transmit out (
+    .rst(smu_rst), // Assuming no reset for simplicity
+    .clk(clk),
+    .data_left(fifo_out_data_left),
+    .data_right(fifo_out_data_right),
+    .validity(smu_read_en), // Assuming always valid for this example
+    .sample_rate_code(4'b1100), // Example sample rate code
+    .spdif_out(pin_opt1) // Output to pin_opt1
+);
+
+system_management_unit smu (
+    .pin_user_sw(pin_user_sw),
+    .pin_i2s_bclk_pll(pin_i2s_bclk_pll),
+    .pll_lock(pll_lock), // Use the PLL lock signal
+    .pin_i2s_fclk(pin_i2s_fclk),
+    .full(smu_full), // Full signal from FIFO not used in this example
+    .empty(smu_empty), // Empty signal from FIFO not used in this example
+    .red(red), // Red LED for lock status
+    .write_en(smu_write_en), // Write enable signal not used in this example
+    .read_en(smu_read_en), // Read enable signal not used in this example
+    .rst(smu_rst) // Reset signal not used in this example
+);
+
+endmodule
+
+module system_management_unit
 (
-    .clk_i()
-)
+    input  wire pin_user_sw,
+    input  wire pin_i2s_bclk_pll,
+    input  wire pll_lock,
+    input  wire pin_i2s_fclk,
+    input  wire full,
+    input  wire empty,
+    output wire red,
+    output wire write_en,
+    output wire read_en,
+    output wire rst
+);
 
+    // monitor reset signal and lock signal to trigger reset
+    assign rst = ~pll_lock | ~state_bclk;
+
+    reg state_fclk = 0;
+    // monitor that a full fclk period has passed before allowing writes
+    always @(posedge pin_i2s_fclk or posedge rst) begin
+        if (rst) begin
+            state_fclk <= 0;
+        end else begin
+            if (state_fclk == 0) begin
+                state_fclk <= 1; // Allow write after first fclk period
+            end
+        end
+    end
+
+    reg state_bclk = 0;
+    // monitor that a full fclk period has passed before allowing writes
+    always @(negedge pin_user_sw or posedge pin_i2s_bclk_pll) begin
+        if (~pin_user_sw) begin
+            state_bclk <= 0;
+        end else begin
+            if (state_bclk == 0) begin
+                state_bclk <= 1; // Allow write after first fclk period
+            end
+        end
+    end
+            
+    assign read_en = ~empty && state_fclk; // Allow read if not empty and state is set
+    assign write_en = ~full && state_fclk; // Allow write if not full and state is set
+    assign red = ~pll_lock; // Red LED indicates lock status
 
 endmodule

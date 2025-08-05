@@ -1,47 +1,68 @@
-`timescale 1us/1ns
+`timescale 1ns / 1ps
 
-module rgb_led_tb;
-    reg clk = 0;
-    reg rst = 0;
-    wire red, green, blue;
+module splitstreamer_tb;
 
-    // Instantiate the RGB LED module
-    rgb_led uut (
-        .pin_clk_12mhz(clk),
+    // Inputs
+    reg pin_i2s_bclk_pll = 0;
+    reg pin_i2s_fclk = 0;
+    reg pin_i2s_bclk = 0;
+    reg pin_i2s_data = 0;
+    reg pin_creset = 1; // Active low reset
+    // Outputs
+    wire red;
+    wire pin_opt1;
+
+    // Instantiate the DUT
+    splitstreamer uut (
+        .pin_i2s_bclk_pll(pin_i2s_bclk_pll),
+        .pin_i2s_fclk(pin_i2s_fclk),
+        .pin_i2s_bclk(pin_i2s_bclk),
+        .pin_i2s_data(pin_i2s_data),
         .red(red),
-        .green(green),
-        .blue(blue)
+        .pin_opt1(pin_opt1),
+        .pin_creset(pin_creset)
     );
 
-    // Generate 12 MHz clock (period = 83.333 ns)    
-    always begin
-        #41.667ns 
-        clk = ~clk;
-    end
+    // Clocks
+    always #20 pin_i2s_bclk_pll = ~pin_i2s_bclk_pll;  // 25 MHz PLL clock
+    always #40 pin_i2s_bclk = ~pin_i2s_bclk;          // 12.5 MHz I2S bit clock
+    always #2560 pin_i2s_fclk = ~pin_i2s_fclk;         // 200 kHz LR clock (16 samples @ 10 MHz)
 
     initial begin
-        #1
-        rst = 1;
-        #1
-        rst = 0;
-    end
+        // VCD dump for waveform
+        $dumpfile("splitstreamer_tb.vcd");
+        $dumpvars(0, splitstreamer_tb);
 
-    initial begin
-        $dumpfile("rgb_led_tb.vcd");
-        $dumpvars(0, rgb_led_tb);
+        // Reset the DUT
+        pin_creset = 0; // Assert reset
+        // Wait for PLL lock (simulated)
+        #100;
+        // Release reset
+        pin_creset = 1;
 
+        // Send I2S data (simulate stereo frame)
+        repeat (10) begin
+            // Left channel: 0x12345678
+            send_i2s_word($random, 0);
+            // Right channel: 0x9ABCDEF0
+            send_i2s_word($random, 1);
+        end
 
-
-        // Run long enough to see several color changes
-        #(1000000);
-        $display("Sim progress 25%");
-        #(1000000);
-        $display("Sim progress 50%");
-        #(1000000);
-        $display("Sim progress 75%");
-        #(1000000);
-        $display("Sim progress 100%");
-
+        // Wait and finish
+        #1000;
         $finish;
     end
+
+    // I2S word sender (MSB first)
+    task send_i2s_word(input [31:0] word, input channel);
+        integer i;
+        begin
+            pin_i2s_fclk = channel;
+            for (i = 31; i >= 0; i = i - 1) begin
+                pin_i2s_data = word[i];
+                @(negedge pin_i2s_bclk);
+            end
+        end
+    endtask
+
 endmodule

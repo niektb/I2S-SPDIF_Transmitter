@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Aug 05 18:41:55 2025
+[*]
+[dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.vcd"
+[dumpfile_mtime] "Tue Aug 05 18:40:45 2025"
+[dumpfile_size] 116513
+[savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.gtkw"
+[timestart] 0
+[size] 2560 1369
+[pos] -87 -87
+*-23.000000 14480000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] splitstreamer_tb.
+[treeopen] splitstreamer_tb.uut.
+[sst_width] 197
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 423
+@28
+splitstreamer_tb.pin_creset
+splitstreamer_tb.pin_i2s_bclk
+splitstreamer_tb.pin_i2s_bclk_pll
+splitstreamer_tb.pin_i2s_data
+splitstreamer_tb.pin_i2s_fclk
+splitstreamer_tb.pin_opt1
+splitstreamer_tb.red
+@22
+splitstreamer_tb.send_i2s_word.word[31:0]
+splitstreamer_tb.uut.fifo_in_data_left[31:0]
+splitstreamer_tb.uut.fifo_in_data_right[31:0]
+splitstreamer_tb.uut.fifo_out_data_left[31:0]
+splitstreamer_tb.uut.fifo_out_data_right[31:0]
+@29
+splitstreamer_tb.uut.smu_empty
+splitstreamer_tb.uut.smu_full
+splitstreamer_tb.uut.smu_read_en
+splitstreamer_tb.uut.smu_rst
+splitstreamer_tb.uut.smu_write_en
+[pattern_trace] 1
+[pattern_trace] 0
