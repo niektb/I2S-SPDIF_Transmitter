@@ -7,7 +7,7 @@ module splitstreamer_tb;
     reg pin_i2s_fclk = 0;
     reg pin_i2s_bclk = 0;
     reg pin_i2s_data = 0;
-    reg pin_creset = 1; // Active low reset
+    reg pin_user_sw = 1; // Active low reset
     // Outputs
     wire red;
     wire pin_opt1;
@@ -20,7 +20,7 @@ module splitstreamer_tb;
         .pin_i2s_data(pin_i2s_data),
         .red(red),
         .pin_opt1(pin_opt1),
-        .pin_creset(pin_creset)
+        .pin_user_sw(pin_user_sw)
     );
 
     // Clocks
@@ -34,11 +34,11 @@ module splitstreamer_tb;
         $dumpvars(0, splitstreamer_tb);
 
         // Reset the DUT
-        pin_creset = 0; // Assert reset
+        pin_user_sw = 0; // Assert reset
         // Wait for PLL lock (simulated)
         #100;
         // Release reset
-        pin_creset = 1;
+        pin_user_sw = 1;
 
         // Send I2S data (simulate stereo frame)
         repeat (10) begin
