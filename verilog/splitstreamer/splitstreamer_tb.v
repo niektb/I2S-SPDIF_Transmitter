@@ -26,7 +26,7 @@ module splitstreamer_tb;
     // Clocks
     always #20 pin_i2s_bclk_pll = ~pin_i2s_bclk_pll;  // 25 MHz PLL clock
     always #40 pin_i2s_bclk = ~pin_i2s_bclk;          // 12.5 MHz I2S bit clock
-    always #2560 pin_i2s_fclk = ~pin_i2s_fclk;         // 200 kHz LR clock (16 samples @ 10 MHz)
+    always #2560 pin_i2s_fclk = ~pin_i2s_fclk;
 
     initial begin
         // VCD dump for waveform

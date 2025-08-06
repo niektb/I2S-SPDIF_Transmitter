@@ -2,15 +2,15 @@
 
 module splitstreamer (
     input wire pin_i2s_bclk_pll, // at some point, this should become the PLL output
+    input wire pin_i2s_bclk, // I2S bit clock
     input wire pin_i2s_fclk,
-    input wire pin_i2s_bclk,
     input wire pin_i2s_data,
     input wire pin_user_sw, // Active low reset
     output wire red,
     output wire pin_opt1
 );
 
-wire clk;
+wire clk; // Main clock for the design
 wire pll_lock;
 wire smu_full;
 wire smu_empty;
@@ -32,17 +32,18 @@ SB_PLL40_CORE #(
     .FILTER_RANGE(3'b001) // Moderate filter range
 ) pll_inst (
     .REFERENCECLK(pin_i2s_bclk_pll),
-    .PLLOUTCORE(clk),
+    .PLLOUTGLOBAL(clk),
     .RESETB(1'b1), // No reset
     .BYPASS(1'b0), // Not bypassed
     .LOCK(pll_lock) // Lock signal for PLL
 );
+
 `else
 assign clk = pin_i2s_bclk_pll; // For simulation, use the input
 assign pll_lock = 1'b1; // Simulate PLL lock
 `endif
 
-i2s_receive2 in (
+i2s_receive1 in (
     .rst(smu_rst), // Assuming no reset for simplicity
     .sck(pin_i2s_bclk),
     .ws(pin_i2s_fclk),
@@ -80,7 +81,7 @@ spdif_transmit out (
 
 system_management_unit smu (
     .pin_user_sw(pin_user_sw),
-    .pin_i2s_bclk_pll(pin_i2s_bclk_pll),
+    .clk(clk),
     .pll_lock(pll_lock), // Use the PLL lock signal
     .pin_i2s_fclk(pin_i2s_fclk),
     .full(smu_full), // Full signal from FIFO not used in this example
@@ -96,7 +97,7 @@ endmodule
 module system_management_unit
 (
     input  wire pin_user_sw,
-    input  wire pin_i2s_bclk_pll,
+    input  wire clk,
     input  wire pll_lock,
     input  wire pin_i2s_fclk,
     input  wire full,
@@ -124,7 +125,7 @@ module system_management_unit
 
     reg state_bclk = 0;
     // monitor that a full fclk period has passed before allowing writes
-    always @(negedge pin_user_sw or posedge pin_i2s_bclk_pll) begin
+    always @(negedge pin_user_sw or posedge clk) begin
         if (~pin_user_sw) begin
             state_bclk <= 0;
         end else begin
