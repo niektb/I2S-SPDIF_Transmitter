@@ -19,7 +19,9 @@ wire wsp = wsdd ^ wsd; // Update previous state of word select for edge detectio
 
 reg [5:0] counter; // Counter for bit position
 always @(negedge sck or posedge rst)
-    if (rst | wsp)
+    if (rst)
+        counter <= 0; // Reset counter
+    else if (wsp)
         counter <= 0; // Reset counter
     else if (counter < 32)
         counter <= counter + 1; // Increment counter for each bit received
