@@ -37,6 +37,7 @@ always @(posedge sck or posedge rst) begin
         
         if(wsp)
             shift_reg <= 0; // Reset shift register on word select change
+
         if (counter < 32) 
             shift_reg[counter] <= sd; // Shift in the serial data   
         

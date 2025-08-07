@@ -7,7 +7,11 @@ module splitstreamer (
     input wire pin_i2s_data,
     input wire pin_user_sw, // Active low reset
     output wire red,
-    output wire pin_opt1
+    output wire green,
+    output wire blue,
+    output wire pin_opt1,
+    output wire pin_opt2,
+    output wire pin_i2s_out_data // This is the SPDIF output to pinheader
 );
 
 wire clk; // Main clock for the design
@@ -22,6 +26,12 @@ wire [31:0] fifo_in_data_right;
 wire [31:0] fifo_out_data_left;
 wire [31:0] fifo_out_data_right;
 wire smu_validity;
+
+wire optical_out;
+
+assign pin_opt1 = optical_out; // SPDIF output to pin_opt1
+assign pin_opt2 = optical_out; // SPDIF output to pin_opt2
+assign pin_i2s_out_data = optical_out; // I2S output to pinheader
 
 `ifndef SIM
 SB_PLL40_CORE #(
@@ -76,7 +86,7 @@ spdif_transmit out (
     .data_right(fifo_out_data_right),
     .validity(smu_read_en), // Assuming always valid for this example
     .sample_rate_code(4'b1100), // Example sample rate code
-    .spdif_out(pin_opt1) // Output to pin_opt1
+    .spdif_out(optical_out) // Output to pin_opt1
 );
 
 system_management_unit smu (
@@ -87,6 +97,8 @@ system_management_unit smu (
     .full(smu_full), // Full signal from FIFO not used in this example
     .empty(smu_empty), // Empty signal from FIFO not used in this example
     .red(red), // Red LED for lock status
+    .green(green), // Green LED for lock status
+    .blue(blue), // Blue LED for lock status
     .write_en(smu_write_en), // Write enable signal not used in this example
     .read_en(smu_read_en), // Read enable signal not used in this example
     .rst(smu_rst) // Reset signal not used in this example
@@ -103,6 +115,8 @@ module system_management_unit
     input  wire full,
     input  wire empty,
     output wire red,
+    output wire green,
+    output wire blue,
     output wire write_en,
     output wire read_en,
     output wire rst
@@ -138,5 +152,9 @@ module system_management_unit
     assign read_en = ~empty && state_fclk; // Allow read if not empty and state is set
     assign write_en = ~full && state_fclk; // Allow write if not full and state is set
     assign red = ~pll_lock; // Red LED indicates lock status
+    assign blue = ~pll_lock; // Red LED indicates lock status
+    assign green = ~pll_lock; // Red LED indicates lock status
+    
+    
 
 endmodule
