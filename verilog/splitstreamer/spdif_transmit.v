@@ -74,7 +74,7 @@ module spdif_transmit (
     reg bmc_out = 0;
     reg bmc_phase = 0;
 
-    always @(negedge spdif_clk or posedge rst) begin
+    always @(posedge clk or posedge rst) begin
         if (rst) begin
             bmc_out <= 0;
             bmc_phase <= 0;
@@ -119,9 +119,9 @@ module spdif_transmit (
                     bmc_phase <= 1;
                 end else begin
                     if (shift_data[27])
-                        bmc_out <= bmc_out; // one transition for 1
+                        bmc_out <= ~bmc_out; // extra transition for 1
                     else
-                        bmc_out <= ~bmc_out; // extra transition for 0
+                        bmc_out <= bmc_out; // 1 transition for 0
                     bmc_phase <= 0;
 
                     // shift down
@@ -131,7 +131,7 @@ module spdif_transmit (
         end
     end
 
-    always @(negedge spdif_clk)
+    always @(negedge clk)
         spdif_out <= bmc_out;
 
     // subframe creation function

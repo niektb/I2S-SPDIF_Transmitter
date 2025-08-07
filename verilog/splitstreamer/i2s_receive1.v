@@ -21,7 +21,7 @@ always @(posedge sck or posedge rst) begin
         data_right <= 32'b0; // Reset right channel data    
         wsd <= 1'b0; // Reset word select state
         wsdd <= 1'b0; // Reset last word select state   
-        wsp <= 1'b0; // Reset previous word select state
+        //wsp <= 1'b0; // Reset previous word select state
         data_left_enable <= 1'b0; // Disable left channel data      
         data_right_enable <= 1'b0; // Disable right channel data
     end else begin

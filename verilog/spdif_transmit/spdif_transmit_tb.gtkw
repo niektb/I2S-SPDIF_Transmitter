@@ -1,0 +1,40 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Thu Aug 07 18:35:39 2025
+[*]
+[dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\spdif_transmit\spdif_transmit_tb.vcd"
+[dumpfile_mtime] "Thu Aug 07 18:34:35 2025"
+[dumpfile_size] 49960
+[savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\spdif_transmit\spdif_transmit_tb.gtkw"
+[timestart] 0
+[size] 2560 1369
+[pos] -295 -9
+*-20.923248 1595000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] spdif_transmit_tb.
+[treeopen] spdif_transmit_tb.dut.
+[sst_width] 256
+[signals_width] 174
+[sst_expanded] 1
+[sst_vpaned_height] 423
+@28
+spdif_transmit_tb.clk
+spdif_transmit_tb.dut.spdif_clk
+spdif_transmit_tb.rst
+@22
+spdif_transmit_tb.data_left[31:0]
+spdif_transmit_tb.data_right[31:0]
+@800028
+spdif_transmit_tb.dut.shift_data[27:0]
+@28
+(0)spdif_transmit_tb.dut.shift_data[27:0]
+@1001200
+-group_end
+@28
+spdif_transmit_tb.dut.bmc_out
+@29
+spdif_transmit_tb.dut.bmc_phase
+@22
+spdif_transmit_tb.dut.bit_idx[5:0]
+spdif_transmit_tb.dut.preamble_type[3:0]
+[pattern_trace] 1
+[pattern_trace] 0
