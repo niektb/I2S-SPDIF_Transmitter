@@ -1,4 +1,4 @@
-`define SIM
+//`define SIM
 
 module splitstreamer (
     input wire pin_i2s_bclk_pll, // at some point, this should become the PLL output
