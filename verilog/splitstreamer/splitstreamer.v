@@ -96,7 +96,7 @@ reverse_bits #(
 
 // Instantiate the SPDIF transmitter
 spdif_transmit out (
-    .rst(smu_rst), // Assuming no reset for simplicity
+    .rst(smu_rst),
     .clk(clk),
     .data_left(fifo_out_data_left_reverse),
     .data_right(fifo_out_data_right_reverse),
@@ -139,7 +139,7 @@ module system_management_unit
 );
 
     // monitor reset signal and lock signal to trigger reset
-    assign rst = ~pll_lock | ~state_bclk | ~user_sw_ff[1];
+    assign rst = ~pll_lock | ~state_bclk;
 
     reg state_fclk = 0;
     // monitor that a full fclk period has passed before allowing writes
@@ -165,7 +165,7 @@ module system_management_unit
         if (user_sw_ff[1] == 1'b0 && user_sw_ff[0] == 1'b1) begin
             state_bclk <= 0;
         end else begin
-            if (state_bclk == 0) begin
+            if (state_bclk == 0 && user_sw_ff[1] == 1) begin
                 state_bclk <= 1; // Allow write after first bclk period
             end
         end
