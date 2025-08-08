@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Thu Aug 07 18:56:16 2025
+[*] Fri Aug 08 18:56:01 2025
 [*]
 [dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.vcd"
-[dumpfile_mtime] "Thu Aug 07 18:47:39 2025"
-[dumpfile_size] 151411
+[dumpfile_mtime] "Fri Aug 08 18:55:01 2025"
+[dumpfile_size] 2954101
 [savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.gtkw"
-[timestart] 0
+[timestart] 770200000
 [size] 2560 1369
 [pos] -1 -1
-*-22.305616 27860000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-24.602604 1003900000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] splitstreamer_tb.
 [treeopen] splitstreamer_tb.uut.
 [treeopen] splitstreamer_tb.uut.out.
@@ -55,7 +55,8 @@ splitstreamer_tb.uut.out.preamble_w.idx[5:0]
 @28
 splitstreamer_tb.uut.pin_opt1
 splitstreamer_tb.uut.pin_opt2
-@29
 splitstreamer_tb.uut.out.validity
+@25
+splitstreamer_tb.uut.out.frame_count[9:0]
 [pattern_trace] 1
 [pattern_trace] 0

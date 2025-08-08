@@ -15,10 +15,12 @@ module fifo #(
     output wire empty
 );
 
+    localparam PTR_WIDTH = $clog2(DEPTH);
+
     reg [WORDSIZE-1:0] left_mem [0:DEPTH-1];
     reg [WORDSIZE-1:0] right_mem[0:DEPTH-1];
-    reg [$clog2(DEPTH):0] wr_ptr = 0; // pointers will wrap around automatically
-    reg [$clog2(DEPTH):0] rd_ptr = 0;
+    reg [PTR_WIDTH-1:0] wr_ptr = 0; 
+    reg [PTR_WIDTH-1:0] rd_ptr = 0;
     reg [$clog2(DEPTH+1)-1:0] count = 0;
 
     assign full  = (count == DEPTH);
@@ -36,13 +38,13 @@ module fifo #(
             if (write_en && !full) begin
                 left_mem[wr_ptr]  <= data_left_in;
                 right_mem[wr_ptr] <= data_right_in;
-                wr_ptr <= wr_ptr + 1;
+                wr_ptr <= wr_ptr + 1'b1;
             end
             // Read
             if (read_en && !empty) begin
                 data_left_out  <= left_mem[rd_ptr];
                 data_right_out <= right_mem[rd_ptr];
-                rd_ptr <= rd_ptr + 1;
+                rd_ptr <= rd_ptr + 1'b1;
             end
             // Count management
             case ({write_en && !full, read_en && !empty})
@@ -54,5 +56,3 @@ module fifo #(
     end
 
 endmodule
-
-

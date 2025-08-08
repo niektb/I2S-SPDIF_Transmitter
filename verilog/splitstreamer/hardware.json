@@ -9639,7 +9639,7 @@
       "attributes": {
         "hdlname": "\\splitstreamer",
         "top": "00000000000000000000000000000001",
-        "src": "splitstreamer.v:3.1-123.10"
+        "src": "splitstreamer.v:3.1-125.10"
       },
       "ports": {
         "pin_i2s_bclk_pll": {
@@ -9685,6 +9685,10 @@
         "pin_i2s_out_data": {
           "direction": "output",
           "bits": [ 8 ]
+        },
+        "pin_i2s_out_fclk": {
+          "direction": "output",
+          "bits": [ 4 ]
         }
       },
       "cells": {
@@ -9720,7 +9724,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
           },
           "port_directions": {
             "C": "input",
@@ -9744,7 +9748,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
           },
           "port_directions": {
             "C": "input",
@@ -9793,7 +9797,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
           },
           "port_directions": {
             "C": "input",
@@ -9842,7 +9846,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
           },
           "port_directions": {
             "C": "input",
@@ -9892,7 +9896,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9917,7 +9921,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9942,7 +9946,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9966,7 +9970,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:14.63-14.116"
           },
           "port_directions": {
             "C": "input",
@@ -9991,7 +9995,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10016,7 +10020,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10041,7 +10045,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10066,7 +10070,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10114,7 +10118,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10135,7 +10139,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10156,7 +10160,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10179,7 +10183,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10227,7 +10231,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10248,7 +10252,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10269,7 +10273,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10316,7 +10320,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10340,7 +10344,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10365,7 +10369,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10389,7 +10393,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10414,7 +10418,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10438,7 +10442,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10463,7 +10467,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10487,7 +10491,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10512,7 +10516,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10536,7 +10540,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10586,7 +10590,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -10609,7 +10613,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10630,7 +10634,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10651,7 +10655,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10672,7 +10676,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -10694,7 +10698,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10868,7 +10872,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10967,7 +10971,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -10991,7 +10995,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11016,7 +11020,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11040,7 +11044,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11065,7 +11069,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11089,7 +11093,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11114,7 +11118,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11138,7 +11142,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11163,7 +11167,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11187,7 +11191,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11212,7 +11216,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11236,7 +11240,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11261,7 +11265,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11285,7 +11289,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11310,7 +11314,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11334,7 +11338,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11359,7 +11363,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11383,7 +11387,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11433,7 +11437,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
           },
           "port_directions": {
             "I0": "input",
@@ -11531,7 +11535,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11552,7 +11556,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11573,7 +11577,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11594,7 +11598,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11615,7 +11619,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11636,7 +11640,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11657,7 +11661,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11678,7 +11682,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -11700,7 +11704,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:51.5-66.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -11959,7 +11963,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -11981,7 +11985,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12003,7 +12007,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12050,7 +12054,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12097,7 +12101,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12144,7 +12148,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12191,7 +12195,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12238,7 +12242,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12285,7 +12289,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12332,7 +12336,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12379,7 +12383,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12426,7 +12430,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12498,7 +12502,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12520,7 +12524,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12567,7 +12571,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12614,7 +12618,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12661,7 +12665,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12708,7 +12712,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12755,7 +12759,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12802,7 +12806,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12849,7 +12853,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12921,7 +12925,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -12968,7 +12972,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -13015,7 +13019,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -13062,7 +13066,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -13109,7 +13113,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -13156,7 +13160,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -13203,7 +13207,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:72.5-127.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:19.59-19.105"
           },
           "port_directions": {
             "C": "input",
@@ -13275,7 +13279,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:26.5-28.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:26.5-28.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
             "C": "input",
@@ -13420,7 +13424,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:129.5-130.30|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:129.5-130.30|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
             "C": "input",
@@ -13445,7 +13449,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:45.3-51.2"
+            "src": "splitstreamer.v:47.3-53.2"
           },
           "port_directions": {
             "BYPASS": "input",
@@ -13643,7 +13647,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13664,7 +13668,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13685,7 +13689,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13706,7 +13710,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13727,7 +13731,7 @@
           "parameters": {
           },
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
           },
           "port_directions": {
             "CI": "input",
@@ -13899,7 +13903,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:164.5-172.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:166.5-174.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:24.66-24.119"
           },
           "port_directions": {
             "C": "input",
@@ -13973,7 +13977,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:146.5-154.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:148.5-156.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
             "C": "input",
@@ -14093,7 +14097,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:158.5-160.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:160.5-162.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
             "C": "input",
@@ -14113,7 +14117,7 @@
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:158.5-160.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:160.5-162.8|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/ff_map.v:2.51-2.90"
           },
           "port_directions": {
             "C": "input",
@@ -14140,7 +14144,7 @@
           "bits": [ 4 ],
           "attributes": {
             "hdlname": "buffer clk",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:7.16-7.19"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:7.16-7.19"
           }
         },
         "buffer.count": {
@@ -14148,28 +14152,28 @@
           "bits": [ 29, 24, 20, 15, 12 ],
           "attributes": {
             "hdlname": "buffer count",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:22.31-22.36"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:24.31-24.36"
           }
         },
         "buffer.count_SB_DFFER_Q_1_D": {
           "hide_name": 0,
           "bits": [ 14 ],
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8"
           }
         },
         "buffer.count_SB_DFFER_Q_2_D": {
           "hide_name": 0,
           "bits": [ 19 ],
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8"
           }
         },
         "buffer.count_SB_DFFER_Q_3_D": {
           "hide_name": 0,
           "bits": [ 23 ],
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8"
           }
         },
         "buffer.count_SB_DFFER_Q_3_D_SB_LUT4_O_I2": {
@@ -14177,7 +14181,7 @@
           "bits": [ 30, 26, 22, 17, 195 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:33.26-33.27",
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:33.26-33.27",
             "unused_bits": "4"
           }
         },
@@ -14186,7 +14190,7 @@
           "bits": [ 30, 25, 21, 16, 32 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:33.26-33.27"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:33.26-33.27"
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_I3": {
@@ -14194,14 +14198,14 @@
           "bits": [ "0", 29, 34, 33, 31 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:51.33-51.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "buffer.count_SB_DFFER_Q_D": {
           "hide_name": 0,
           "bits": [ 10 ],
           "attributes": {
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:29.5-56.8"
           }
         },
         "buffer.count_SB_DFFER_Q_D_SB_LUT4_O_I2": {
@@ -14217,7 +14221,7 @@
           "bits": [ "1", 29, 28, 27, 35 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:52.33-52.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "buffer.data_left_in": {
@@ -14225,7 +14229,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer data_left_in",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:10.31-10.43"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:10.31-10.43"
           }
         },
         "buffer.data_left_out": {
@@ -14233,7 +14237,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer data_left_out",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:12.31-12.44"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:12.31-12.44"
           }
         },
         "buffer.data_right_in": {
@@ -14241,7 +14245,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer data_right_in",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:11.31-11.44"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:11.31-11.44"
           }
         },
         "buffer.data_right_out": {
@@ -14249,7 +14253,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer data_right_out",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:13.31-13.45"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:13.31-13.45"
           }
         },
         "buffer.left_mem[0]": {
@@ -14257,7 +14261,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[0]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[10]": {
@@ -14265,7 +14269,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[10]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[11]": {
@@ -14273,7 +14277,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[11]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[12]": {
@@ -14281,7 +14285,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[12]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[13]": {
@@ -14289,7 +14293,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[13]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[14]": {
@@ -14297,7 +14301,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[14]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[15]": {
@@ -14305,7 +14309,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[15]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[1]": {
@@ -14313,7 +14317,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[1]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[2]": {
@@ -14321,7 +14325,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[2]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[3]": {
@@ -14329,7 +14333,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[3]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[4]": {
@@ -14337,7 +14341,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[4]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[5]": {
@@ -14345,7 +14349,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[5]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[6]": {
@@ -14353,7 +14357,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[6]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[7]": {
@@ -14361,7 +14365,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[7]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[8]": {
@@ -14369,7 +14373,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[8]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.left_mem[9]": {
@@ -14377,7 +14381,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer left_mem[9]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:18.24-18.32"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:20.24-20.32"
           }
         },
         "buffer.right_mem[0]": {
@@ -14385,7 +14389,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[0]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[10]": {
@@ -14393,7 +14397,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[10]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[11]": {
@@ -14401,7 +14405,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[11]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[12]": {
@@ -14409,7 +14413,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[12]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[13]": {
@@ -14417,7 +14421,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[13]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[14]": {
@@ -14425,7 +14429,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[14]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[15]": {
@@ -14433,7 +14437,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[15]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[1]": {
@@ -14441,7 +14445,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[1]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[2]": {
@@ -14449,7 +14453,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[2]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[3]": {
@@ -14457,7 +14461,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[3]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[4]": {
@@ -14465,7 +14469,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[4]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[5]": {
@@ -14473,7 +14477,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[5]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[6]": {
@@ -14481,7 +14485,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[6]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[7]": {
@@ -14489,7 +14493,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[7]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[8]": {
@@ -14497,7 +14501,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[8]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.right_mem[9]": {
@@ -14505,7 +14509,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "buffer right_mem[9]",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:21.24-21.33"
           }
         },
         "buffer.rst": {
@@ -14513,56 +14517,56 @@
           "bits": [ 13 ],
           "attributes": {
             "hdlname": "buffer rst",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:6.16-6.19"
+            "src": "splitstreamer.v:72.3-83.2|fifo.v:6.16-6.19"
           }
         },
         "clk": {
           "hide_name": 0,
           "bits": [ 37 ],
           "attributes": {
-            "src": "splitstreamer.v:17.6-17.9"
+            "src": "splitstreamer.v:18.6-18.9"
           }
         },
         "fifo_in_data_left": {
           "hide_name": 0,
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
-            "src": "splitstreamer.v:24.13-24.30"
+            "src": "splitstreamer.v:25.13-25.30"
           }
         },
         "fifo_in_data_right": {
           "hide_name": 0,
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
-            "src": "splitstreamer.v:25.13-25.31"
+            "src": "splitstreamer.v:26.13-26.31"
           }
         },
         "fifo_out_data_left": {
           "hide_name": 0,
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
-            "src": "splitstreamer.v:26.13-26.31"
+            "src": "splitstreamer.v:27.13-27.31"
           }
         },
         "fifo_out_data_left_reverse": {
           "hide_name": 0,
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
-            "src": "splitstreamer.v:28.13-28.39"
+            "src": "splitstreamer.v:29.13-29.39"
           }
         },
         "fifo_out_data_right": {
           "hide_name": 0,
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
-            "src": "splitstreamer.v:27.13-27.32"
+            "src": "splitstreamer.v:28.13-28.32"
           }
         },
         "fifo_out_data_right_reverse": {
           "hide_name": 0,
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
-            "src": "splitstreamer.v:29.13-29.40"
+            "src": "splitstreamer.v:30.13-30.40"
           }
         },
         "green": {
@@ -14577,7 +14581,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "in data_left",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:6.24-6.33"
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:6.24-6.33"
           }
         },
         "in.data_left_enable": {
@@ -14585,7 +14589,7 @@
           "bits": [ "0" ],
           "attributes": {
             "hdlname": "in data_left_enable",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:14.5-14.21"
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:14.5-14.21"
           }
         },
         "in.data_right": {
@@ -14593,7 +14597,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "in data_right",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:7.24-7.34"
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:7.24-7.34"
           }
         },
         "in.data_right_enable": {
@@ -14601,7 +14605,7 @@
           "bits": [ "0" ],
           "attributes": {
             "hdlname": "in data_right_enable",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:15.5-15.22"
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:15.5-15.22"
           }
         },
         "in.rst": {
@@ -14609,7 +14613,7 @@
           "bits": [ 13 ],
           "attributes": {
             "hdlname": "in rst",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:2.24-2.27"
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:2.24-2.27"
           }
         },
         "in.sck": {
@@ -14617,7 +14621,7 @@
           "bits": [ 3 ],
           "attributes": {
             "hdlname": "in sck",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:3.24-3.27",
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:3.24-3.27",
             "unused_bits": "0 "
           }
         },
@@ -14626,7 +14630,7 @@
           "bits": [ 5 ],
           "attributes": {
             "hdlname": "in sd",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:5.24-5.26",
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:5.24-5.26",
             "unused_bits": "0 "
           }
         },
@@ -14635,14 +14639,14 @@
           "bits": [ 4 ],
           "attributes": {
             "hdlname": "in ws",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:4.24-4.26"
+            "src": "splitstreamer.v:60.14-67.2|i2s_receive1.v:4.24-4.26"
           }
         },
         "optical_out": {
           "hide_name": 0,
           "bits": [ 8 ],
           "attributes": {
-            "src": "splitstreamer.v:32.6-32.17"
+            "src": "splitstreamer.v:33.6-33.17"
           }
         },
         "out.bit_idx": {
@@ -14650,7 +14654,7 @@
           "bits": [ 53, 52, 49, 46, 42, 40 ],
           "attributes": {
             "hdlname": "out bit_idx",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:43.15-43.22"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:43.15-43.22"
           }
         },
         "out.bit_idx_SB_DFFESR_Q_1_D": {
@@ -14694,7 +14698,7 @@
           "bits": [ "0", 53, 50, 47, 44, 55 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "out.bmc_out": {
@@ -14702,7 +14706,7 @@
           "bits": [ 58 ],
           "attributes": {
             "hdlname": "out bmc_out",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:69.9-69.16"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:69.9-69.16"
           }
         },
         "out.bmc_out_SB_DFFESR_Q_D": {
@@ -14738,7 +14742,7 @@
           "bits": [ 72 ],
           "attributes": {
             "hdlname": "out bmc_phase",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:70.9-70.18"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:70.9-70.18"
           }
         },
         "out.bmc_phase_SB_DFFESR_Q_D": {
@@ -14758,7 +14762,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out ch_status_idx",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:30.15-30.28"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:30.15-30.28"
           }
         },
         "out.ch_status_left": {
@@ -14766,7 +14770,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out ch_status_left",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:17.17-17.31"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:17.17-17.31"
           }
         },
         "out.ch_status_right": {
@@ -14774,7 +14778,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out ch_status_right",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:18.17-18.32"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:18.17-18.32"
           }
         },
         "out.channel_status_bit_left": {
@@ -14782,7 +14786,7 @@
           "bits": [ "0" ],
           "attributes": {
             "hdlname": "out channel_status_bit_left",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:31.10-31.33"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:31.10-31.33"
           }
         },
         "out.channel_status_bit_right": {
@@ -14790,7 +14794,7 @@
           "bits": [ "0" ],
           "attributes": {
             "hdlname": "out channel_status_bit_right",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:32.10-32.34"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:32.10-32.34"
           }
         },
         "out.clk": {
@@ -14798,7 +14802,7 @@
           "bits": [ 37 ],
           "attributes": {
             "hdlname": "out clk",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:3.24-3.27"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:3.24-3.27"
           }
         },
         "out.data_left": {
@@ -14806,7 +14810,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out data_left",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:4.24-4.33"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:4.24-4.33"
           }
         },
         "out.data_right": {
@@ -14814,7 +14818,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out data_right",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:5.24-5.34"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:5.24-5.34"
           }
         },
         "out.frame_count": {
@@ -14822,77 +14826,77 @@
           "bits": [ 100, 99, 96, 93, 90, 87, 84, 81, 77, 75 ],
           "attributes": {
             "hdlname": "out frame_count",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:45.15-45.26"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:45.15-45.26"
           }
         },
         "out.frame_count_SB_DFFESR_Q_1_D": {
           "hide_name": 0,
           "bits": [ 76 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_2_D": {
           "hide_name": 0,
           "bits": [ 80 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_3_D": {
           "hide_name": 0,
           "bits": [ 83 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_4_D": {
           "hide_name": 0,
           "bits": [ 86 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_5_D": {
           "hide_name": 0,
           "bits": [ 89 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_6_D": {
           "hide_name": 0,
           "bits": [ 92 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_7_D": {
           "hide_name": 0,
           "bits": [ 95 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_8_D": {
           "hide_name": 0,
           "bits": [ 98 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_9_D": {
           "hide_name": 0,
           "bits": [ 101 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_D": {
           "hide_name": 0,
           "bits": [ 73 ],
           "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.36-61.78"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.36-61.78"
           }
         },
         "out.frame_count_SB_DFFESR_Q_D_SB_LUT4_O_I0": {
@@ -14900,7 +14904,7 @@
           "bits": [ 78, "0", 75, 102 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
         "out.frame_count_SB_DFFESR_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2": {
@@ -14916,7 +14920,7 @@
           "bits": [ "0", 100, 97, 94, 91, 88, 85, 82, 79, 102 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:61.63-61.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "out.lr": {
@@ -14924,7 +14928,7 @@
           "bits": [ 107 ],
           "attributes": {
             "hdlname": "out lr",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:44.15-44.17"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:44.15-44.17"
           }
         },
         "out.lr_SB_DFFESR_Q_D": {
@@ -14945,7 +14949,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:38$405.audio_data",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:134.22-134.32"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:134.22-134.32"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:38$405.channel_status": {
@@ -14954,7 +14958,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:38$405.channel_status",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:137.22-137.36"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:137.22-137.36"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:38$405.i": {
@@ -14964,7 +14968,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:38$405.i",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:140.22-140.23"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:140.22-140.23"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:38$405.parity": {
@@ -14973,7 +14977,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:38$405.parity",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:139.22-139.28"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:139.22-139.28"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:38$405.temp": {
@@ -14982,7 +14986,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:38$405.temp",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:138.22-138.26"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:138.22-138.26"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:38$405.validity": {
@@ -14991,7 +14995,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:38$405.validity",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:135.22-135.30"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:135.22-135.30"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:39$406.audio_data": {
@@ -15000,7 +15004,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:39$406.audio_data",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:134.22-134.32"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:134.22-134.32"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:39$406.channel_status": {
@@ -15009,7 +15013,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:39$406.channel_status",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:137.22-137.36"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:137.22-137.36"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:39$406.i": {
@@ -15019,7 +15023,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:39$406.i",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:140.22-140.23"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:140.22-140.23"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:39$406.parity": {
@@ -15028,7 +15032,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:39$406.parity",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:139.22-139.28"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:139.22-139.28"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:39$406.temp": {
@@ -15037,7 +15041,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:39$406.temp",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:138.22-138.26"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:138.22-138.26"
           }
         },
         "out.make_subframe$func$spdif_transmit.v:39$406.validity": {
@@ -15046,7 +15050,7 @@
           "attributes": {
             "hdlname": "out make_subframe$func$spdif_transmit.v:39$406.validity",
             "nosync": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:135.22-135.30"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:135.22-135.30"
           }
         },
         "out.preamble_type": {
@@ -15095,7 +15099,7 @@
           "bits": [ 13 ],
           "attributes": {
             "hdlname": "out rst",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:2.24-2.27"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:2.24-2.27"
           }
         },
         "out.sample_rate_code": {
@@ -15103,7 +15107,7 @@
           "bits": [ "0", "0", "1", "1" ],
           "attributes": {
             "hdlname": "out sample_rate_code",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:7.24-7.40"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:7.24-7.40"
           }
         },
         "out.shift_data": {
@@ -15111,7 +15115,7 @@
           "bits": [ 156, 154, 152, 148, 146, 144, 142, 138, 136, 134, 132, 130, 128, 126, 124, 122, 120, 119, 170, 168, 166, 164, 162, 160, 158, 139, 117, 59 ],
           "attributes": {
             "hdlname": "out shift_data",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:47.16-47.26"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:47.16-47.26"
           }
         },
         "out.shift_data_SB_DFFSR_Q_10_D": {
@@ -15287,7 +15291,7 @@
           "bits": [ 108 ],
           "attributes": {
             "hdlname": "out spdif_clk",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:25.9-25.18"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:25.9-25.18"
           }
         },
         "out.spdif_clk_SB_DFF_Q_D": {
@@ -15295,7 +15299,7 @@
           "bits": [ 172 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:27.22-27.38|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/techmap.v:270.23-270.24"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:27.22-27.38|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/techmap.v:270.23-270.24"
           }
         },
         "out.spdif_clk_SB_LUT4_I0_I1": {
@@ -15303,7 +15307,7 @@
           "bits": [ 43, "0", 46, 47 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:63.28-63.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
         "out.spdif_clk_SB_LUT4_I0_I1_SB_LUT4_O_I1": {
@@ -15331,7 +15335,7 @@
           "bits": [ 8 ],
           "attributes": {
             "hdlname": "out spdif_out",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:8.24-8.33"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:8.24-8.33"
           }
         },
         "out.subframe_data_left": {
@@ -15339,7 +15343,7 @@
           "bits": [ 196, "0", "0", 197, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out subframe_data_left",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:35.16-35.34",
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:35.16-35.34",
             "unused_bits": "0 3"
           }
         },
@@ -15348,7 +15352,7 @@
           "bits": [ 198, "0", "0", 199, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out subframe_data_right",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:36.16-36.35",
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:36.16-36.35",
             "unused_bits": "0 3"
           }
         },
@@ -15387,6 +15391,13 @@
             "src": "splitstreamer.v:14.17-14.33"
           }
         },
+        "pin_i2s_out_fclk": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "splitstreamer.v:15.17-15.33"
+          }
+        },
         "pin_opt1": {
           "hide_name": 0,
           "bits": [ 8 ],
@@ -15412,7 +15423,7 @@
           "hide_name": 0,
           "bits": [ 9 ],
           "attributes": {
-            "src": "splitstreamer.v:18.6-18.14"
+            "src": "splitstreamer.v:19.6-19.14"
           }
         },
         "red": {
@@ -15427,7 +15438,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "reverse_left in",
-            "src": "splitstreamer.v:85.3-88.2|splitstreamer.v:183.29-183.31"
+            "src": "splitstreamer.v:87.3-90.2|splitstreamer.v:185.29-185.31"
           }
         },
         "reverse_left.out": {
@@ -15435,7 +15446,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "reverse_left out",
-            "src": "splitstreamer.v:85.3-88.2|splitstreamer.v:184.29-184.32"
+            "src": "splitstreamer.v:87.3-90.2|splitstreamer.v:186.29-186.32"
           }
         },
         "reverse_right.in": {
@@ -15443,7 +15454,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "reverse_right in",
-            "src": "splitstreamer.v:92.3-95.2|splitstreamer.v:183.29-183.31"
+            "src": "splitstreamer.v:94.3-97.2|splitstreamer.v:185.29-185.31"
           }
         },
         "reverse_right.out": {
@@ -15451,7 +15462,7 @@
           "bits": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "reverse_right out",
-            "src": "splitstreamer.v:92.3-95.2|splitstreamer.v:184.29-184.32"
+            "src": "splitstreamer.v:94.3-97.2|splitstreamer.v:186.29-186.32"
           }
         },
         "smu.blue": {
@@ -15459,7 +15470,7 @@
           "bits": [ 7 ],
           "attributes": {
             "hdlname": "smu blue",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:135.17-135.21"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:137.17-137.21"
           }
         },
         "smu.clk": {
@@ -15467,7 +15478,7 @@
           "bits": [ 37 ],
           "attributes": {
             "hdlname": "smu clk",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:128.17-128.20"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:130.17-130.20"
           }
         },
         "smu.green": {
@@ -15475,7 +15486,7 @@
           "bits": [ 7 ],
           "attributes": {
             "hdlname": "smu green",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:134.17-134.22"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:136.17-136.22"
           }
         },
         "smu.pin_i2s_fclk": {
@@ -15483,7 +15494,7 @@
           "bits": [ 4 ],
           "attributes": {
             "hdlname": "smu pin_i2s_fclk",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:130.17-130.29"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:132.17-132.29"
           }
         },
         "smu.pin_user_sw": {
@@ -15491,7 +15502,7 @@
           "bits": [ 6 ],
           "attributes": {
             "hdlname": "smu pin_user_sw",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:127.17-127.28"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:129.17-129.28"
           }
         },
         "smu.pll_lock": {
@@ -15499,7 +15510,7 @@
           "bits": [ 9 ],
           "attributes": {
             "hdlname": "smu pll_lock",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:129.17-129.25"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:131.17-131.25"
           }
         },
         "smu.pll_lock_SB_LUT4_I3_O": {
@@ -15539,7 +15550,7 @@
           "bits": [ 187, 185, 183, 181, 179, 176 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:37.23-37.25"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:37.23-37.25"
           }
         },
         "smu.pll_lock_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_CI": {
@@ -15547,7 +15558,7 @@
           "bits": [ "1", 187, 185, 183, 181, 179 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
           }
         },
         "smu.pll_lock_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CO_I1": {
@@ -15555,7 +15566,7 @@
           "bits": [ 187, 188, 186, 184, 182, 180 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:49.21-49.23"
+            "src": "splitstreamer.v:100.16-108.2|spdif_transmit.v:96.17-96.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:49.21-49.23"
           }
         },
         "smu.red": {
@@ -15563,7 +15574,7 @@
           "bits": [ 7 ],
           "attributes": {
             "hdlname": "smu red",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:133.17-133.20"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:135.17-135.20"
           }
         },
         "smu.rst": {
@@ -15571,7 +15582,7 @@
           "bits": [ 13 ],
           "attributes": {
             "hdlname": "smu rst",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:138.17-138.20"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:140.17-140.20"
           }
         },
         "smu.state_bclk": {
@@ -15579,7 +15590,7 @@
           "bits": [ 174 ],
           "attributes": {
             "hdlname": "smu state_bclk",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:162.9-162.19"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:164.9-164.19"
           }
         },
         "smu.state_bclk_SB_DFFESR_Q_E": {
@@ -15592,7 +15603,7 @@
           "hide_name": 0,
           "bits": [ 190 ],
           "attributes": {
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:165.13-165.59"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:167.13-167.59"
           }
         },
         "smu.state_fclk": {
@@ -15600,7 +15611,7 @@
           "bits": [ 193 ],
           "attributes": {
             "hdlname": "smu state_fclk",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:144.9-144.19"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:146.9-146.19"
           }
         },
         "smu.state_fclk_SB_LUT4_I3_1_O": {
@@ -15632,14 +15643,14 @@
           "bits": [ 192, 191 ],
           "attributes": {
             "hdlname": "smu user_sw_ff",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:157.15-157.25"
+            "src": "splitstreamer.v:110.24-123.2|splitstreamer.v:159.15-159.25"
           }
         },
         "smu_rst": {
           "hide_name": 0,
           "bits": [ 13 ],
           "attributes": {
-            "src": "splitstreamer.v:23.6-23.13"
+            "src": "splitstreamer.v:24.6-24.13"
           }
         }
       }
