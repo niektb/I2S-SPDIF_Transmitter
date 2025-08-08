@@ -1,4 +1,4 @@
-//`define SIM
+`define SIM
 
 module splitstreamer (
     input wire pin_i2s_bclk_pll, // at some point, this should become the PLL output
@@ -139,11 +139,11 @@ module system_management_unit
 );
 
     // monitor reset signal and lock signal to trigger reset
-    assign rst = ~pll_lock | ~state_bclk;
+    assign rst = ~pll_lock | ~state_bclk | ~user_sw_ff[1];
 
     reg state_fclk = 0;
     // monitor that a full fclk period has passed before allowing writes
-    always @(posedge pin_i2s_fclk or posedge rst) begin
+    always @(posedge pin_i2s_fclk) begin
         if (rst) begin
             state_fclk <= 0;
         end else begin
@@ -153,17 +153,23 @@ module system_management_unit
         end
     end
 
+    // run pin_user_sw through 2 flip flops to debounce the switch
+    reg [1:0] user_sw_ff = 2'b00;
+    always @(posedge clk) begin
+        user_sw_ff <= {user_sw_ff[0], pin_user_sw};
+    end     
+
     reg state_bclk = 0;
     // monitor that a full fclk period has passed before allowing writes
-    always @(negedge pin_user_sw or posedge clk) begin
-        if (~pin_user_sw) begin
+    always @(posedge clk) begin
+        if (user_sw_ff[1] == 1'b0 && user_sw_ff[0] == 1'b1) begin
             state_bclk <= 0;
         end else begin
             if (state_bclk == 0) begin
-                state_bclk <= 1; // Allow write after first fclk period
+                state_bclk <= 1; // Allow write after first bclk period
             end
         end
-    end
+    end 
             
     assign read_en = ~empty && state_fclk; // Allow read if not empty and state is set
     assign write_en = ~full && state_fclk; // Allow write if not full and state is set

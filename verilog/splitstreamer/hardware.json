@@ -5984,6 +5984,7 @@
     "SB_PLL40_CORE": {
       "attributes": {
         "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
         "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_sim.v:2425.1-2453.10"
       },
       "parameter_default_values": {
@@ -9663,55 +9664,30 @@
         },
         "red": {
           "direction": "output",
-          "bits": [ 7 ]
+          "bits": [ "0" ]
         },
         "green": {
           "direction": "output",
-          "bits": [ 7 ]
+          "bits": [ "0" ]
         },
         "blue": {
           "direction": "output",
-          "bits": [ 7 ]
+          "bits": [ "0" ]
         },
         "pin_opt1": {
           "direction": "output",
-          "bits": [ 8 ]
+          "bits": [ 7 ]
         },
         "pin_opt2": {
           "direction": "output",
-          "bits": [ 8 ]
+          "bits": [ 7 ]
         },
         "pin_i2s_out_data": {
           "direction": "output",
-          "bits": [ 8 ]
+          "bits": [ 7 ]
         }
       },
       "cells": {
-        "blue_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000011111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:12.34-13.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 9 ],
-            "O": [ 7 ]
-          }
-        },
         "buffer.count_SB_DFFER_Q": {
           "hide_name": 0,
           "type": "SB_DFFER",
@@ -9730,10 +9706,10 @@
           },
           "connections": {
             "C": [ 4 ],
-            "D": [ 10 ],
-            "E": [ 11 ],
-            "Q": [ 12 ],
-            "R": [ 13 ]
+            "D": [ 8 ],
+            "E": [ 9 ],
+            "Q": [ 10 ],
+            "R": [ 11 ]
           }
         },
         "buffer.count_SB_DFFER_Q_1": {
@@ -9754,10 +9730,10 @@
           },
           "connections": {
             "C": [ 4 ],
-            "D": [ 14 ],
-            "E": [ 11 ],
-            "Q": [ 15 ],
-            "R": [ 13 ]
+            "D": [ 12 ],
+            "E": [ 9 ],
+            "Q": [ 13 ],
+            "R": [ 11 ]
           }
         },
         "buffer.count_SB_DFFER_Q_1_D_SB_LUT4_O": {
@@ -9779,10 +9755,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 16 ],
-            "I2": [ 17 ],
-            "I3": [ 18 ],
-            "O": [ 14 ]
+            "I1": [ 14 ],
+            "I2": [ 15 ],
+            "I3": [ 16 ],
+            "O": [ 12 ]
           }
         },
         "buffer.count_SB_DFFER_Q_2": {
@@ -9803,10 +9779,10 @@
           },
           "connections": {
             "C": [ 4 ],
-            "D": [ 19 ],
-            "E": [ 11 ],
-            "Q": [ 20 ],
-            "R": [ 13 ]
+            "D": [ 17 ],
+            "E": [ 9 ],
+            "Q": [ 18 ],
+            "R": [ 11 ]
           }
         },
         "buffer.count_SB_DFFER_Q_2_D_SB_LUT4_O": {
@@ -9828,10 +9804,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 21 ],
-            "I2": [ 22 ],
-            "I3": [ 18 ],
-            "O": [ 19 ]
+            "I1": [ 19 ],
+            "I2": [ 20 ],
+            "I3": [ 16 ],
+            "O": [ 17 ]
           }
         },
         "buffer.count_SB_DFFER_Q_3": {
@@ -9852,10 +9828,10 @@
           },
           "connections": {
             "C": [ 4 ],
-            "D": [ 23 ],
-            "E": [ 11 ],
-            "Q": [ 24 ],
-            "R": [ 13 ]
+            "D": [ 21 ],
+            "E": [ 9 ],
+            "Q": [ 22 ],
+            "R": [ 11 ]
           }
         },
         "buffer.count_SB_DFFER_Q_3_D_SB_LUT4_O": {
@@ -9877,10 +9853,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 25 ],
-            "I2": [ 26 ],
-            "I3": [ 18 ],
-            "O": [ 23 ]
+            "I1": [ 23 ],
+            "I2": [ 24 ],
+            "I3": [ 16 ],
+            "O": [ 21 ]
           }
         },
         "buffer.count_SB_DFFER_Q_3_D_SB_LUT4_O_I2_SB_LUT4_O": {
@@ -9902,10 +9878,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 15 ],
+            "I1": [ 13 ],
             "I2": [ "1" ],
-            "I3": [ 27 ],
-            "O": [ 17 ]
+            "I3": [ 25 ],
+            "O": [ 15 ]
           }
         },
         "buffer.count_SB_DFFER_Q_3_D_SB_LUT4_O_I2_SB_LUT4_O_1": {
@@ -9927,10 +9903,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 20 ],
+            "I1": [ 18 ],
             "I2": [ "1" ],
-            "I3": [ 28 ],
-            "O": [ 22 ]
+            "I3": [ 26 ],
+            "O": [ 20 ]
           }
         },
         "buffer.count_SB_DFFER_Q_3_D_SB_LUT4_O_I2_SB_LUT4_O_2": {
@@ -9952,10 +9928,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 24 ],
+            "I1": [ 22 ],
             "I2": [ "1" ],
-            "I3": [ 29 ],
-            "O": [ 26 ]
+            "I3": [ 27 ],
+            "O": [ 24 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4": {
@@ -9976,10 +9952,10 @@
           },
           "connections": {
             "C": [ 4 ],
-            "D": [ 30 ],
-            "E": [ 11 ],
-            "Q": [ 29 ],
-            "R": [ 13 ]
+            "D": [ 28 ],
+            "E": [ 9 ],
+            "Q": [ 27 ],
+            "R": [ 11 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O": {
@@ -10002,9 +9978,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 12 ],
-            "I3": [ 31 ],
-            "O": [ 32 ]
+            "I2": [ 10 ],
+            "I3": [ 29 ],
+            "O": [ 30 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_1": {
@@ -10027,9 +10003,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 15 ],
-            "I3": [ 33 ],
-            "O": [ 16 ]
+            "I2": [ 13 ],
+            "I3": [ 31 ],
+            "O": [ 14 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_2": {
@@ -10052,9 +10028,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 20 ],
-            "I3": [ 34 ],
-            "O": [ 21 ]
+            "I2": [ 18 ],
+            "I3": [ 32 ],
+            "O": [ 19 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_3": {
@@ -10077,9 +10053,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 24 ],
-            "I3": [ 29 ],
-            "O": [ 25 ]
+            "I2": [ 22 ],
+            "I3": [ 27 ],
+            "O": [ 23 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_4": {
@@ -10103,8 +10079,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 29 ],
-            "O": [ 30 ]
+            "I3": [ 27 ],
+            "O": [ 28 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_I3_SB_CARRY_CO": {
@@ -10122,10 +10098,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 33 ],
-            "CO": [ 31 ],
+            "CI": [ 31 ],
+            "CO": [ 29 ],
             "I0": [ "0" ],
-            "I1": [ 15 ]
+            "I1": [ 13 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_I3_SB_CARRY_CO_1": {
@@ -10143,10 +10119,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 34 ],
-            "CO": [ 33 ],
+            "CI": [ 32 ],
+            "CO": [ 31 ],
             "I0": [ "0" ],
-            "I1": [ 20 ]
+            "I1": [ 18 ]
           }
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_I3_SB_CARRY_CO_2": {
@@ -10164,10 +10140,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 29 ],
-            "CO": [ 34 ],
+            "CI": [ 27 ],
+            "CO": [ 32 ],
             "I0": [ "0" ],
-            "I1": [ 24 ]
+            "I1": [ 22 ]
           }
         },
         "buffer.count_SB_DFFER_Q_D_SB_LUT4_O": {
@@ -10188,11 +10164,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 32 ],
-            "I1": [ 12 ],
-            "I2": [ 18 ],
-            "I3": [ 35 ],
-            "O": [ 10 ]
+            "I0": [ 30 ],
+            "I1": [ 10 ],
+            "I2": [ 16 ],
+            "I3": [ 33 ],
+            "O": [ 8 ]
           }
         },
         "buffer.count_SB_DFFER_Q_D_SB_LUT4_O_I2_SB_LUT4_O": {
@@ -10215,9 +10191,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 11 ],
-            "I3": [ 12 ],
-            "O": [ 18 ]
+            "I2": [ 9 ],
+            "I3": [ 10 ],
+            "O": [ 16 ]
           }
         },
         "buffer.count_SB_DFFER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
@@ -10235,9 +10211,9 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 27 ],
-            "CO": [ 35 ],
-            "I0": [ 15 ],
+            "CI": [ 25 ],
+            "CO": [ 33 ],
+            "I0": [ 13 ],
             "I1": [ "1" ]
           }
         },
@@ -10256,9 +10232,9 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 28 ],
-            "CO": [ 27 ],
-            "I0": [ 20 ],
+            "CI": [ 26 ],
+            "CO": [ 25 ],
+            "I0": [ 18 ],
             "I1": [ "1" ]
           }
         },
@@ -10277,35 +10253,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 29 ],
-            "CO": [ 28 ],
-            "I0": [ 24 ],
+            "CI": [ 27 ],
+            "CO": [ 26 ],
+            "I0": [ 22 ],
             "I1": [ "1" ]
-          }
-        },
-        "buffer.rst_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000111111111111"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:17.34-18.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 36 ],
-            "I3": [ 9 ],
-            "O": [ 13 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q": {
@@ -10324,10 +10275,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 38 ],
-            "Q": [ 39 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 35 ],
+            "Q": [ 36 ],
+            "R": [ 11 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_1": {
@@ -10346,10 +10297,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 40 ],
-            "Q": [ 41 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 37 ],
+            "Q": [ 38 ],
+            "R": [ 11 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_1_D_SB_LUT4_O": {
@@ -10370,11 +10321,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 42 ],
+            "I0": [ 39 ],
             "I1": [ "0" ],
-            "I2": [ 41 ],
-            "I3": [ 43 ],
-            "O": [ 40 ]
+            "I2": [ 38 ],
+            "I3": [ 40 ],
+            "O": [ 37 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_2": {
@@ -10393,10 +10344,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 44 ],
-            "Q": [ 45 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 41 ],
+            "Q": [ 42 ],
+            "R": [ 11 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_2_D_SB_LUT4_O": {
@@ -10417,11 +10368,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 42 ],
+            "I0": [ 39 ],
             "I1": [ "0" ],
-            "I2": [ 45 ],
-            "I3": [ 46 ],
-            "O": [ 44 ]
+            "I2": [ 42 ],
+            "I3": [ 43 ],
+            "O": [ 41 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_3": {
@@ -10440,10 +10391,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 47 ],
-            "Q": [ 48 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 44 ],
+            "Q": [ 45 ],
+            "R": [ 11 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_3_D_SB_LUT4_O": {
@@ -10464,11 +10415,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 42 ],
+            "I0": [ 39 ],
             "I1": [ "0" ],
-            "I2": [ 48 ],
-            "I3": [ 49 ],
-            "O": [ 47 ]
+            "I2": [ 45 ],
+            "I3": [ 46 ],
+            "O": [ 44 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_4": {
@@ -10487,10 +10438,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 50 ],
-            "Q": [ 51 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 47 ],
+            "Q": [ 48 ],
+            "R": [ 11 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_4_D_SB_LUT4_O": {
@@ -10511,11 +10462,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 42 ],
+            "I0": [ 39 ],
             "I1": [ "0" ],
-            "I2": [ 51 ],
-            "I3": [ 52 ],
-            "O": [ 50 ]
+            "I2": [ 48 ],
+            "I3": [ 49 ],
+            "O": [ 47 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_5": {
@@ -10534,10 +10485,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 53 ],
-            "Q": [ 52 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 50 ],
+            "Q": [ 49 ],
+            "R": [ 11 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_5_D_SB_LUT4_O": {
@@ -10561,8 +10512,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 52 ],
-            "O": [ 53 ]
+            "I3": [ 49 ],
+            "O": [ 50 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O": {
@@ -10583,11 +10534,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 42 ],
+            "I0": [ 39 ],
             "I1": [ "0" ],
-            "I2": [ 39 ],
-            "I3": [ 54 ],
-            "O": [ 38 ]
+            "I2": [ 36 ],
+            "I3": [ 51 ],
+            "O": [ 35 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
@@ -10605,13 +10556,34 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 43 ],
-            "CO": [ 54 ],
+            "CI": [ 40 ],
+            "CO": [ 51 ],
             "I0": [ "0" ],
-            "I1": [ 41 ]
+            "I1": [ 38 ]
           }
         },
         "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_1": {
+          "hide_name": 0,
+          "type": "SB_CARRY",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:68.28-68.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
+          },
+          "port_directions": {
+            "CI": "input",
+            "CO": "output",
+            "I0": "input",
+            "I1": "input"
+          },
+          "connections": {
+            "CI": [ 43 ],
+            "CO": [ 40 ],
+            "I0": [ "0" ],
+            "I1": [ 42 ]
+          }
+        },
+        "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_2": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -10632,7 +10604,7 @@
             "I1": [ 45 ]
           }
         },
-        "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_2": {
+        "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_3": {
           "hide_name": 0,
           "type": "SB_CARRY",
           "parameters": {
@@ -10653,27 +10625,6 @@
             "I1": [ 48 ]
           }
         },
-        "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_3": {
-          "hide_name": 0,
-          "type": "SB_CARRY",
-          "parameters": {
-          },
-          "attributes": {
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:68.28-68.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4"
-          },
-          "port_directions": {
-            "CI": "input",
-            "CO": "output",
-            "I0": "input",
-            "I1": "input"
-          },
-          "connections": {
-            "CI": [ 52 ],
-            "CO": [ 49 ],
-            "I0": [ "0" ],
-            "I1": [ 51 ]
-          }
-        },
         "out.bmc_out_SB_DFFER_Q": {
           "hide_name": 0,
           "type": "SB_DFFER",
@@ -10691,11 +10642,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 56 ],
-            "E": [ 57 ],
-            "Q": [ 58 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 52 ],
+            "E": [ 53 ],
+            "Q": [ 54 ],
+            "R": [ 11 ]
           }
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O": {
@@ -10716,11 +10667,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 59 ],
-            "I1": [ 60 ],
-            "I2": [ 58 ],
-            "I3": [ 61 ],
-            "O": [ 56 ]
+            "I0": [ 55 ],
+            "I1": [ 56 ],
+            "I2": [ 54 ],
+            "I3": [ 57 ],
+            "O": [ 52 ]
           }
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O": {
@@ -10743,9 +10694,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 62 ],
-            "I3": [ 63 ],
-            "O": [ 59 ]
+            "I2": [ 58 ],
+            "I3": [ 59 ],
+            "O": [ 55 ]
           }
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_1": {
@@ -10766,11 +10717,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 64 ],
-            "I1": [ 65 ],
-            "I2": [ 66 ],
-            "I3": [ 67 ],
-            "O": [ 60 ]
+            "I0": [ 60 ],
+            "I1": [ 61 ],
+            "I2": [ 62 ],
+            "I3": [ 63 ],
+            "O": [ 56 ]
           }
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I3": {
@@ -10792,10 +10743,85 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 52 ],
-            "I2": [ 51 ],
-            "I3": [ 62 ],
-            "O": [ 65 ]
+            "I1": [ 49 ],
+            "I2": [ 48 ],
+            "I3": [ 58 ],
+            "O": [ 61 ]
+          }
+        },
+        "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0001000000000000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 64 ],
+            "I1": [ 65 ],
+            "I2": [ 66 ],
+            "I3": [ 67 ],
+            "O": [ 68 ]
+          }
+        },
+        "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_O": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 69 ],
+            "I1": [ 70 ],
+            "I2": [ 71 ],
+            "I3": [ 72 ],
+            "O": [ 67 ]
+          }
+        },
+        "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_O_1": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000000000001"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ 73 ],
+            "I1": [ 74 ],
+            "I2": [ 75 ],
+            "I3": [ 76 ],
+            "O": [ 66 ]
           }
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O": {
@@ -10816,11 +10842,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 41 ],
-            "I1": [ 48 ],
-            "I2": [ 39 ],
-            "I3": [ 45 ],
-            "O": [ 62 ]
+            "I0": [ 42 ],
+            "I1": [ 45 ],
+            "I2": [ 36 ],
+            "I3": [ 38 ],
+            "O": [ 58 ]
           }
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3_SB_LUT4_O": {
@@ -10841,11 +10867,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 67 ],
-            "I1": [ 64 ],
-            "I2": [ 51 ],
-            "I3": [ 52 ],
-            "O": [ 63 ]
+            "I0": [ 63 ],
+            "I1": [ 60 ],
+            "I2": [ 48 ],
+            "I3": [ 49 ],
+            "O": [ 59 ]
           }
         },
         "out.bmc_out_SB_DFFER_Q_E_SB_LUT4_O": {
@@ -10868,9 +10894,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 68 ],
-            "I3": [ 69 ],
-            "O": [ 57 ]
+            "I2": [ 77 ],
+            "I3": [ 78 ],
+            "O": [ 53 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q": {
@@ -10890,11 +10916,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 70 ],
-            "E": [ 61 ],
-            "Q": [ 71 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 79 ],
+            "E": [ 57 ],
+            "Q": [ 80 ],
+            "R": [ 11 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_D_SB_LUT4_O": {
@@ -10918,8 +10944,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 71 ],
-            "O": [ 70 ]
+            "I3": [ 80 ],
+            "O": [ 79 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O": {
@@ -10941,10 +10967,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 72 ],
-            "I2": [ 73 ],
-            "I3": [ 74 ],
-            "O": [ 61 ]
+            "I1": [ 81 ],
+            "I2": [ 82 ],
+            "I3": [ 83 ],
+            "O": [ 57 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I1_SB_LUT4_O": {
@@ -10966,10 +10992,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 52 ],
-            "I2": [ 51 ],
-            "I3": [ 48 ],
-            "O": [ 72 ]
+            "I1": [ 49 ],
+            "I2": [ 48 ],
+            "I3": [ 45 ],
+            "O": [ 81 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I1_SB_LUT4_O_1": {
@@ -10991,10 +11017,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 41 ],
-            "I2": [ 39 ],
-            "I3": [ 45 ],
-            "O": [ 73 ]
+            "I1": [ 42 ],
+            "I2": [ 36 ],
+            "I3": [ 38 ],
+            "O": [ 82 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO": {
@@ -11012,10 +11038,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 75 ],
-            "CO": [ 74 ],
+            "CI": [ 84 ],
+            "CO": [ 83 ],
             "I0": [ "0" ],
-            "I1": [ 76 ]
+            "I1": [ 85 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO": {
@@ -11033,10 +11059,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 77 ],
-            "CO": [ 75 ],
+            "CI": [ 86 ],
+            "CO": [ 84 ],
             "I0": [ "0" ],
-            "I1": [ 78 ]
+            "I1": [ 87 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_1": {
@@ -11054,10 +11080,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 79 ],
-            "CO": [ 77 ],
+            "CI": [ 88 ],
+            "CO": [ 86 ],
             "I0": [ "0" ],
-            "I1": [ 80 ]
+            "I1": [ 89 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_2": {
@@ -11075,10 +11101,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 81 ],
-            "CO": [ 79 ],
+            "CI": [ 90 ],
+            "CO": [ 88 ],
             "I0": [ "1" ],
-            "I1": [ 82 ]
+            "I1": [ 91 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_3": {
@@ -11096,10 +11122,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 83 ],
-            "CO": [ 81 ],
+            "CI": [ 92 ],
+            "CO": [ 90 ],
             "I0": [ "0" ],
-            "I1": [ 84 ]
+            "I1": [ 93 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_I1_SB_LUT4_O": {
@@ -11123,8 +11149,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 48 ],
-            "O": [ 82 ]
+            "I3": [ 45 ],
+            "O": [ 91 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_I1_SB_LUT4_O_1": {
@@ -11148,8 +11174,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 39 ],
-            "O": [ 76 ]
+            "I3": [ 36 ],
+            "O": [ 85 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_I1_SB_LUT4_O_2": {
@@ -11173,8 +11199,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 45 ],
-            "O": [ 80 ]
+            "I3": [ 38 ],
+            "O": [ 87 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_I1_SB_LUT4_O_3": {
@@ -11198,8 +11224,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 51 ],
-            "O": [ 84 ]
+            "I3": [ 48 ],
+            "O": [ 93 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_I1_SB_LUT4_O_4": {
@@ -11223,8 +11249,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 52 ],
-            "O": [ 83 ]
+            "I3": [ 49 ],
+            "O": [ 92 ]
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_I1_SB_LUT4_O_5": {
@@ -11248,8 +11274,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 41 ],
-            "O": [ 78 ]
+            "I3": [ 42 ],
+            "O": [ 89 ]
           }
         },
         "out.bmc_phase_SB_LUT4_I3": {
@@ -11272,9 +11298,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 61 ],
-            "I3": [ 71 ],
-            "O": [ 69 ]
+            "I2": [ 57 ],
+            "I3": [ 80 ],
+            "O": [ 78 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q": {
@@ -11294,11 +11320,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 85 ],
-            "E": [ 86 ],
-            "Q": [ 87 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 94 ],
+            "E": [ 95 ],
+            "Q": [ 65 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_1": {
@@ -11318,11 +11344,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 88 ],
-            "E": [ 86 ],
-            "Q": [ 89 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 96 ],
+            "E": [ 95 ],
+            "Q": [ 64 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_1_D_SB_LUT4_O": {
@@ -11343,11 +11369,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 89 ],
-            "I3": [ 91 ],
-            "O": [ 88 ]
+            "I2": [ 64 ],
+            "I3": [ 98 ],
+            "O": [ 96 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_2": {
@@ -11367,11 +11393,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 92 ],
-            "E": [ 86 ],
-            "Q": [ 93 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 99 ],
+            "E": [ 95 ],
+            "Q": [ 69 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_2_D_SB_LUT4_O": {
@@ -11392,11 +11418,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 93 ],
-            "I3": [ 94 ],
-            "O": [ 92 ]
+            "I2": [ 69 ],
+            "I3": [ 100 ],
+            "O": [ 99 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_3": {
@@ -11416,11 +11442,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 95 ],
-            "E": [ 86 ],
-            "Q": [ 96 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 101 ],
+            "E": [ 95 ],
+            "Q": [ 75 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_3_D_SB_LUT4_O": {
@@ -11441,11 +11467,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 96 ],
-            "I3": [ 97 ],
-            "O": [ 95 ]
+            "I2": [ 75 ],
+            "I3": [ 102 ],
+            "O": [ 101 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_4": {
@@ -11465,11 +11491,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 98 ],
-            "E": [ 86 ],
-            "Q": [ 99 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 103 ],
+            "E": [ 95 ],
+            "Q": [ 71 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_4_D_SB_LUT4_O": {
@@ -11490,11 +11516,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 99 ],
-            "I3": [ 100 ],
-            "O": [ 98 ]
+            "I2": [ 71 ],
+            "I3": [ 104 ],
+            "O": [ 103 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_5": {
@@ -11514,11 +11540,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 101 ],
-            "E": [ 86 ],
-            "Q": [ 102 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 105 ],
+            "E": [ 95 ],
+            "Q": [ 70 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_5_D_SB_LUT4_O": {
@@ -11539,11 +11565,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 102 ],
-            "I3": [ 103 ],
-            "O": [ 101 ]
+            "I2": [ 70 ],
+            "I3": [ 106 ],
+            "O": [ 105 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_6": {
@@ -11563,11 +11589,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 104 ],
-            "E": [ 86 ],
-            "Q": [ 105 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 107 ],
+            "E": [ 95 ],
+            "Q": [ 73 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_6_D_SB_LUT4_O": {
@@ -11588,11 +11614,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 105 ],
-            "I3": [ 106 ],
-            "O": [ 104 ]
+            "I2": [ 73 ],
+            "I3": [ 108 ],
+            "O": [ 107 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_7": {
@@ -11612,11 +11638,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 107 ],
-            "E": [ 86 ],
-            "Q": [ 108 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 109 ],
+            "E": [ 95 ],
+            "Q": [ 72 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_7_D_SB_LUT4_O": {
@@ -11637,11 +11663,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 108 ],
-            "I3": [ 109 ],
-            "O": [ 107 ]
+            "I2": [ 72 ],
+            "I3": [ 110 ],
+            "O": [ 109 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_8": {
@@ -11661,11 +11687,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 110 ],
-            "E": [ 86 ],
-            "Q": [ 111 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 111 ],
+            "E": [ 95 ],
+            "Q": [ 74 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_8_D_SB_LUT4_O": {
@@ -11686,11 +11712,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 111 ],
-            "I3": [ 112 ],
-            "O": [ 110 ]
+            "I2": [ 74 ],
+            "I3": [ 76 ],
+            "O": [ 111 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_9": {
@@ -11710,11 +11736,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 113 ],
-            "E": [ 86 ],
-            "Q": [ 112 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 112 ],
+            "E": [ 95 ],
+            "Q": [ 76 ],
+            "R": [ 11 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_9_D_SB_LUT4_O": {
@@ -11738,8 +11764,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 112 ],
-            "O": [ 113 ]
+            "I3": [ 76 ],
+            "O": [ 112 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O": {
@@ -11760,11 +11786,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 90 ],
+            "I0": [ 97 ],
             "I1": [ "0" ],
-            "I2": [ 87 ],
-            "I3": [ 114 ],
-            "O": [ 85 ]
+            "I2": [ 65 ],
+            "I3": [ 113 ],
+            "O": [ 94 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I0_SB_LUT4_O": {
@@ -11785,11 +11811,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 89 ],
-            "I1": [ 87 ],
-            "I2": [ 115 ],
-            "I3": [ 116 ],
-            "O": [ 90 ]
+            "I0": [ 64 ],
+            "I1": [ 65 ],
+            "I2": [ 114 ],
+            "I3": [ 115 ],
+            "O": [ 97 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O": {
@@ -11810,11 +11836,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 93 ],
-            "I1": [ 102 ],
-            "I2": [ 99 ],
-            "I3": [ 108 ],
-            "O": [ 116 ]
+            "I0": [ 69 ],
+            "I1": [ 70 ],
+            "I2": [ 71 ],
+            "I3": [ 72 ],
+            "O": [ 115 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_1": {
@@ -11835,11 +11861,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 96 ],
-            "I1": [ 111 ],
-            "I2": [ 105 ],
-            "I3": [ 112 ],
-            "O": [ 115 ]
+            "I0": [ 75 ],
+            "I1": [ 74 ],
+            "I2": [ 73 ],
+            "I3": [ 76 ],
+            "O": [ 114 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO": {
@@ -11857,10 +11883,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 91 ],
-            "CO": [ 114 ],
+            "CI": [ 98 ],
+            "CO": [ 113 ],
             "I0": [ "0" ],
-            "I1": [ 89 ]
+            "I1": [ 64 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_1": {
@@ -11878,10 +11904,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 94 ],
-            "CO": [ 91 ],
+            "CI": [ 100 ],
+            "CO": [ 98 ],
             "I0": [ "0" ],
-            "I1": [ 93 ]
+            "I1": [ 69 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_2": {
@@ -11899,10 +11925,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 97 ],
-            "CO": [ 94 ],
+            "CI": [ 102 ],
+            "CO": [ 100 ],
             "I0": [ "0" ],
-            "I1": [ 96 ]
+            "I1": [ 75 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_3": {
@@ -11920,10 +11946,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 100 ],
-            "CO": [ 97 ],
+            "CI": [ 104 ],
+            "CO": [ 102 ],
             "I0": [ "0" ],
-            "I1": [ 99 ]
+            "I1": [ 71 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_4": {
@@ -11941,10 +11967,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 103 ],
-            "CO": [ 100 ],
+            "CI": [ 106 ],
+            "CO": [ 104 ],
             "I0": [ "0" ],
-            "I1": [ 102 ]
+            "I1": [ 70 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_5": {
@@ -11962,10 +11988,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 106 ],
-            "CO": [ 103 ],
+            "CI": [ 108 ],
+            "CO": [ 106 ],
             "I0": [ "0" ],
-            "I1": [ 105 ]
+            "I1": [ 73 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_6": {
@@ -11983,10 +12009,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 109 ],
-            "CO": [ 106 ],
+            "CI": [ 110 ],
+            "CO": [ 108 ],
             "I0": [ "0" ],
-            "I1": [ 108 ]
+            "I1": [ 72 ]
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3_SB_CARRY_CO_7": {
@@ -12004,10 +12030,10 @@
             "I1": "input"
           },
           "connections": {
-            "CI": [ 112 ],
-            "CO": [ 109 ],
+            "CI": [ 76 ],
+            "CO": [ 110 ],
             "I0": [ "0" ],
-            "I1": [ 111 ]
+            "I1": [ 74 ]
           }
         },
         "out.lr_SB_DFFNER_Q": {
@@ -12027,11 +12053,11 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 37 ],
-            "D": [ 117 ],
-            "E": [ 42 ],
-            "Q": [ 118 ],
-            "R": [ 13 ]
+            "C": [ 34 ],
+            "D": [ 116 ],
+            "E": [ 39 ],
+            "Q": [ 117 ],
+            "R": [ 11 ]
           }
         },
         "out.lr_SB_DFFNER_Q_D_SB_LUT4_O": {
@@ -12055,8 +12081,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 118 ],
-            "O": [ 117 ]
+            "I3": [ 117 ],
+            "O": [ 116 ]
           }
         },
         "out.lr_SB_LUT4_I3": {
@@ -12079,9 +12105,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 42 ],
-            "I3": [ 118 ],
-            "O": [ 86 ]
+            "I2": [ 39 ],
+            "I3": [ 117 ],
+            "O": [ 95 ]
           }
         },
         "out.lr_SB_LUT4_I3_I2_SB_LUT4_O": {
@@ -12103,10 +12129,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 119 ],
-            "I2": [ 52 ],
-            "I3": [ 51 ],
-            "O": [ 42 ]
+            "I1": [ 118 ],
+            "I2": [ 49 ],
+            "I3": [ 48 ],
+            "O": [ 39 ]
           }
         },
         "out.lr_SB_LUT4_I3_I2_SB_LUT4_O_I1_SB_LUT4_O": {
@@ -12127,11 +12153,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 39 ],
-            "I1": [ 48 ],
-            "I2": [ 41 ],
-            "I3": [ 45 ],
-            "O": [ 119 ]
+            "I0": [ 36 ],
+            "I1": [ 45 ],
+            "I2": [ 42 ],
+            "I3": [ 38 ],
+            "O": [ 118 ]
           }
         },
         "out.preamble_type_SB_DFFR_Q": {
@@ -12150,10 +12176,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 120 ],
-            "Q": [ 66 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 119 ],
+            "Q": [ 62 ],
+            "R": [ 11 ]
           }
         },
         "out.preamble_type_SB_DFFR_Q_1": {
@@ -12172,10 +12198,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 121 ],
-            "Q": [ 64 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 120 ],
+            "Q": [ 60 ],
+            "R": [ 11 ]
           }
         },
         "out.preamble_type_SB_DFFR_Q_1_D_SB_LUT4_O": {
@@ -12196,11 +12222,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 118 ],
-            "I1": [ 122 ],
-            "I2": [ 64 ],
-            "I3": [ 65 ],
-            "O": [ 121 ]
+            "I0": [ 117 ],
+            "I1": [ 68 ],
+            "I2": [ 60 ],
+            "I3": [ 61 ],
+            "O": [ 120 ]
           }
         },
         "out.preamble_type_SB_DFFR_Q_2": {
@@ -12219,10 +12245,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 123 ],
-            "Q": [ 67 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 121 ],
+            "Q": [ 63 ],
+            "R": [ 11 ]
           }
         },
         "out.preamble_type_SB_DFFR_Q_2_D_SB_LUT4_O": {
@@ -12243,86 +12269,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 122 ],
-            "I1": [ 118 ],
-            "I2": [ 67 ],
-            "I3": [ 65 ],
-            "O": [ 123 ]
-          }
-        },
-        "out.preamble_type_SB_DFFR_Q_2_D_SB_LUT4_O_I0_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0001000000000000"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 89 ],
-            "I1": [ 87 ],
-            "I2": [ 124 ],
-            "I3": [ 125 ],
-            "O": [ 122 ]
-          }
-        },
-        "out.preamble_type_SB_DFFR_Q_2_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 93 ],
-            "I1": [ 102 ],
-            "I2": [ 99 ],
-            "I3": [ 108 ],
-            "O": [ 125 ]
-          }
-        },
-        "out.preamble_type_SB_DFFR_Q_2_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_O_1": {
-          "hide_name": 0,
-          "type": "SB_LUT4",
-          "parameters": {
-            "LUT_INIT": "0000000000000001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:26.33-27.52"
-          },
-          "port_directions": {
-            "I0": "input",
-            "I1": "input",
-            "I2": "input",
-            "I3": "input",
-            "O": "output"
-          },
-          "connections": {
-            "I0": [ 105 ],
-            "I1": [ 111 ],
-            "I2": [ 96 ],
-            "I3": [ 112 ],
-            "O": [ 124 ]
+            "I0": [ 68 ],
+            "I1": [ 117 ],
+            "I2": [ 63 ],
+            "I3": [ 61 ],
+            "O": [ 121 ]
           }
         },
         "out.preamble_type_SB_DFFR_Q_D_SB_LUT4_O": {
@@ -12344,10 +12295,10 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ 66 ],
-            "I2": [ 118 ],
-            "I3": [ 65 ],
-            "O": [ 120 ]
+            "I1": [ 62 ],
+            "I2": [ 117 ],
+            "I3": [ 61 ],
+            "O": [ 119 ]
           }
         },
         "out.shift_data_SB_DFFR_Q": {
@@ -12366,10 +12317,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 126 ],
-            "Q": [ 68 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 122 ],
+            "Q": [ 77 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_1": {
@@ -12388,10 +12339,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 127 ],
-            "Q": [ 128 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 123 ],
+            "Q": [ 124 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_10": {
@@ -12410,10 +12361,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 129 ],
-            "Q": [ 130 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 125 ],
+            "Q": [ 126 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_10_D_SB_LUT4_O": {
@@ -12434,11 +12385,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 130 ],
-            "I2": [ 131 ],
-            "I3": [ 69 ],
-            "O": [ 129 ]
+            "I0": [ 61 ],
+            "I1": [ 126 ],
+            "I2": [ 127 ],
+            "I3": [ 78 ],
+            "O": [ 125 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_11": {
@@ -12457,10 +12408,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 132 ],
-            "Q": [ 131 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 128 ],
+            "Q": [ 127 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_11_D_SB_LUT4_O": {
@@ -12481,11 +12432,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 131 ],
-            "I2": [ 133 ],
-            "I3": [ 69 ],
-            "O": [ 132 ]
+            "I0": [ 61 ],
+            "I1": [ 127 ],
+            "I2": [ 129 ],
+            "I3": [ 78 ],
+            "O": [ 128 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_12": {
@@ -12504,10 +12455,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 134 ],
-            "Q": [ 133 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 130 ],
+            "Q": [ 129 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_12_D_SB_LUT4_O": {
@@ -12528,11 +12479,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 133 ],
-            "I2": [ 135 ],
-            "I3": [ 69 ],
-            "O": [ 134 ]
+            "I0": [ 61 ],
+            "I1": [ 129 ],
+            "I2": [ 131 ],
+            "I3": [ 78 ],
+            "O": [ 130 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_13": {
@@ -12551,10 +12502,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 136 ],
-            "Q": [ 135 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 132 ],
+            "Q": [ 131 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_13_D_SB_LUT4_O": {
@@ -12575,11 +12526,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 135 ],
-            "I2": [ 137 ],
-            "I3": [ 69 ],
-            "O": [ 136 ]
+            "I0": [ 61 ],
+            "I1": [ 131 ],
+            "I2": [ 133 ],
+            "I3": [ 78 ],
+            "O": [ 132 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_14": {
@@ -12598,10 +12549,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 138 ],
-            "Q": [ 137 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 134 ],
+            "Q": [ 133 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_14_D_SB_LUT4_O": {
@@ -12622,11 +12573,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 137 ],
-            "I2": [ 139 ],
-            "I3": [ 69 ],
-            "O": [ 138 ]
+            "I0": [ 61 ],
+            "I1": [ 133 ],
+            "I2": [ 135 ],
+            "I3": [ 78 ],
+            "O": [ 134 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_15": {
@@ -12645,10 +12596,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 140 ],
-            "Q": [ 139 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 136 ],
+            "Q": [ 135 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_15_D_SB_LUT4_O": {
@@ -12669,11 +12620,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 139 ],
-            "I2": [ 141 ],
-            "I3": [ 69 ],
-            "O": [ 140 ]
+            "I0": [ 61 ],
+            "I1": [ 135 ],
+            "I2": [ 137 ],
+            "I3": [ 78 ],
+            "O": [ 136 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_16": {
@@ -12692,10 +12643,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 142 ],
-            "Q": [ 141 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 138 ],
+            "Q": [ 137 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_16_D_SB_LUT4_O": {
@@ -12716,11 +12667,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 141 ],
-            "I2": [ 143 ],
-            "I3": [ 69 ],
-            "O": [ 142 ]
+            "I0": [ 61 ],
+            "I1": [ 137 ],
+            "I2": [ 139 ],
+            "I3": [ 78 ],
+            "O": [ 138 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_17": {
@@ -12739,10 +12690,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 144 ],
-            "Q": [ 143 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 140 ],
+            "Q": [ 139 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_17_D_SB_LUT4_O": {
@@ -12763,11 +12714,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 143 ],
-            "I2": [ 145 ],
-            "I3": [ 69 ],
-            "O": [ 144 ]
+            "I0": [ 61 ],
+            "I1": [ 139 ],
+            "I2": [ 141 ],
+            "I3": [ 78 ],
+            "O": [ 140 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_18": {
@@ -12786,10 +12737,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 146 ],
-            "Q": [ 145 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 142 ],
+            "Q": [ 141 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_18_D_SB_LUT4_O": {
@@ -12810,11 +12761,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 145 ],
-            "I2": [ 147 ],
-            "I3": [ 69 ],
-            "O": [ 146 ]
+            "I0": [ 61 ],
+            "I1": [ 141 ],
+            "I2": [ 143 ],
+            "I3": [ 78 ],
+            "O": [ 142 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_19": {
@@ -12833,10 +12784,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 148 ],
-            "Q": [ 147 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 144 ],
+            "Q": [ 143 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_19_D_SB_LUT4_O": {
@@ -12857,11 +12808,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 147 ],
-            "I2": [ 149 ],
-            "I3": [ 69 ],
-            "O": [ 148 ]
+            "I0": [ 61 ],
+            "I1": [ 143 ],
+            "I2": [ 145 ],
+            "I3": [ 78 ],
+            "O": [ 144 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_1_D_SB_LUT4_O": {
@@ -12882,11 +12833,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 128 ],
-            "I2": [ 150 ],
-            "I3": [ 69 ],
-            "O": [ 127 ]
+            "I0": [ 61 ],
+            "I1": [ 124 ],
+            "I2": [ 146 ],
+            "I3": [ 78 ],
+            "O": [ 123 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_2": {
@@ -12905,10 +12856,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 151 ],
-            "Q": [ 150 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 147 ],
+            "Q": [ 146 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_20": {
@@ -12927,10 +12878,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 152 ],
-            "Q": [ 149 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 148 ],
+            "Q": [ 145 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_20_D_SB_LUT4_O": {
@@ -12951,11 +12902,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 149 ],
-            "I2": [ 153 ],
-            "I3": [ 69 ],
-            "O": [ 152 ]
+            "I0": [ 61 ],
+            "I1": [ 145 ],
+            "I2": [ 149 ],
+            "I3": [ 78 ],
+            "O": [ 148 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_21": {
@@ -12974,10 +12925,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 154 ],
-            "Q": [ 153 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 150 ],
+            "Q": [ 149 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_21_D_SB_LUT4_O": {
@@ -12998,11 +12949,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 153 ],
-            "I2": [ 155 ],
-            "I3": [ 69 ],
-            "O": [ 154 ]
+            "I0": [ 61 ],
+            "I1": [ 149 ],
+            "I2": [ 151 ],
+            "I3": [ 78 ],
+            "O": [ 150 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_22": {
@@ -13021,10 +12972,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 156 ],
-            "Q": [ 155 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 152 ],
+            "Q": [ 151 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_22_D_SB_LUT4_O": {
@@ -13045,11 +12996,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 155 ],
-            "I2": [ 157 ],
-            "I3": [ 69 ],
-            "O": [ 156 ]
+            "I0": [ 61 ],
+            "I1": [ 151 ],
+            "I2": [ 153 ],
+            "I3": [ 78 ],
+            "O": [ 152 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_23": {
@@ -13068,10 +13019,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 158 ],
-            "Q": [ 157 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 154 ],
+            "Q": [ 153 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_23_D_SB_LUT4_O": {
@@ -13092,11 +13043,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 157 ],
-            "I2": [ 159 ],
-            "I3": [ 69 ],
-            "O": [ 158 ]
+            "I0": [ 61 ],
+            "I1": [ 153 ],
+            "I2": [ 155 ],
+            "I3": [ 78 ],
+            "O": [ 154 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_24": {
@@ -13115,10 +13066,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 160 ],
-            "Q": [ 159 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 156 ],
+            "Q": [ 155 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_24_D_SB_LUT4_O": {
@@ -13139,11 +13090,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 161 ],
-            "I1": [ 162 ],
-            "I2": [ 163 ],
-            "I3": [ 69 ],
-            "O": [ 160 ]
+            "I0": [ 157 ],
+            "I1": [ 158 ],
+            "I2": [ 159 ],
+            "I3": [ 78 ],
+            "O": [ 156 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_25": {
@@ -13162,10 +13113,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 164 ],
-            "Q": [ 163 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 160 ],
+            "Q": [ 159 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_25_D_SB_LUT4_O": {
@@ -13186,11 +13137,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 163 ],
-            "I2": [ 165 ],
-            "I3": [ 69 ],
-            "O": [ 164 ]
+            "I0": [ 61 ],
+            "I1": [ 159 ],
+            "I2": [ 161 ],
+            "I3": [ 78 ],
+            "O": [ 160 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_26": {
@@ -13209,10 +13160,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 166 ],
-            "Q": [ 165 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 162 ],
+            "Q": [ 161 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_26_D_SB_LUT4_O": {
@@ -13233,11 +13184,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 165 ],
-            "I2": [ 167 ],
-            "I3": [ 69 ],
-            "O": [ 166 ]
+            "I0": [ 61 ],
+            "I1": [ 161 ],
+            "I2": [ 163 ],
+            "I3": [ 78 ],
+            "O": [ 162 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_27": {
@@ -13256,10 +13207,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 168 ],
-            "Q": [ 167 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 164 ],
+            "Q": [ 163 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_27_D_SB_LUT4_O": {
@@ -13280,11 +13231,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 167 ],
-            "I2": [ 161 ],
-            "I3": [ 69 ],
-            "O": [ 168 ]
+            "I0": [ 61 ],
+            "I1": [ 163 ],
+            "I2": [ 157 ],
+            "I3": [ 78 ],
+            "O": [ 164 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_27_D_SB_LUT4_O_I2_SB_LUT4_O": {
@@ -13307,9 +13258,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 65 ],
-            "I3": [ 159 ],
-            "O": [ 162 ]
+            "I2": [ 61 ],
+            "I3": [ 155 ],
+            "O": [ 158 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_2_D_SB_LUT4_O": {
@@ -13330,11 +13281,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 150 ],
-            "I2": [ 169 ],
-            "I3": [ 69 ],
-            "O": [ 151 ]
+            "I0": [ 61 ],
+            "I1": [ 146 ],
+            "I2": [ 165 ],
+            "I3": [ 78 ],
+            "O": [ 147 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_3": {
@@ -13353,10 +13304,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 170 ],
-            "Q": [ 169 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 166 ],
+            "Q": [ 165 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_3_D_SB_LUT4_O": {
@@ -13377,11 +13328,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 169 ],
-            "I2": [ 171 ],
-            "I3": [ 69 ],
-            "O": [ 170 ]
+            "I0": [ 61 ],
+            "I1": [ 165 ],
+            "I2": [ 167 ],
+            "I3": [ 78 ],
+            "O": [ 166 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_4": {
@@ -13400,10 +13351,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 172 ],
-            "Q": [ 171 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 168 ],
+            "Q": [ 167 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_4_D_SB_LUT4_O": {
@@ -13424,11 +13375,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 171 ],
-            "I2": [ 173 ],
-            "I3": [ 69 ],
-            "O": [ 172 ]
+            "I0": [ 61 ],
+            "I1": [ 167 ],
+            "I2": [ 169 ],
+            "I3": [ 78 ],
+            "O": [ 168 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_5": {
@@ -13447,10 +13398,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 174 ],
-            "Q": [ 173 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 170 ],
+            "Q": [ 169 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_5_D_SB_LUT4_O": {
@@ -13471,11 +13422,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 173 ],
-            "I2": [ 175 ],
-            "I3": [ 69 ],
-            "O": [ 174 ]
+            "I0": [ 61 ],
+            "I1": [ 169 ],
+            "I2": [ 171 ],
+            "I3": [ 78 ],
+            "O": [ 170 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_6": {
@@ -13494,10 +13445,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 176 ],
-            "Q": [ 175 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 172 ],
+            "Q": [ 171 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_6_D_SB_LUT4_O": {
@@ -13518,11 +13469,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 175 ],
-            "I2": [ 177 ],
-            "I3": [ 69 ],
-            "O": [ 176 ]
+            "I0": [ 61 ],
+            "I1": [ 171 ],
+            "I2": [ 173 ],
+            "I3": [ 78 ],
+            "O": [ 172 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_7": {
@@ -13541,10 +13492,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 178 ],
-            "Q": [ 177 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 174 ],
+            "Q": [ 173 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_7_D_SB_LUT4_O": {
@@ -13565,11 +13516,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 177 ],
-            "I2": [ 179 ],
-            "I3": [ 69 ],
-            "O": [ 178 ]
+            "I0": [ 61 ],
+            "I1": [ 173 ],
+            "I2": [ 175 ],
+            "I3": [ 78 ],
+            "O": [ 174 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_8": {
@@ -13588,10 +13539,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 180 ],
-            "Q": [ 179 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 176 ],
+            "Q": [ 175 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_8_D_SB_LUT4_O": {
@@ -13612,11 +13563,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 179 ],
-            "I2": [ 181 ],
-            "I3": [ 69 ],
-            "O": [ 180 ]
+            "I0": [ 61 ],
+            "I1": [ 175 ],
+            "I2": [ 177 ],
+            "I3": [ 78 ],
+            "O": [ 176 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_9": {
@@ -13635,10 +13586,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 182 ],
-            "Q": [ 181 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 178 ],
+            "Q": [ 177 ],
+            "R": [ 11 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_9_D_SB_LUT4_O": {
@@ -13659,11 +13610,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 181 ],
-            "I2": [ 130 ],
-            "I3": [ 69 ],
-            "O": [ 182 ]
+            "I0": [ 61 ],
+            "I1": [ 177 ],
+            "I2": [ 126 ],
+            "I3": [ 78 ],
+            "O": [ 178 ]
           }
         },
         "out.shift_data_SB_DFFR_Q_D_SB_LUT4_O": {
@@ -13684,11 +13635,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 65 ],
-            "I1": [ 68 ],
-            "I2": [ 128 ],
-            "I3": [ 69 ],
-            "O": [ 126 ]
+            "I0": [ 61 ],
+            "I1": [ 77 ],
+            "I2": [ 124 ],
+            "I3": [ 78 ],
+            "O": [ 122 ]
           }
         },
         "out.spdif_clk_SB_DFFR_Q": {
@@ -13707,10 +13658,10 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 183 ],
-            "Q": [ 37 ],
-            "R": [ 13 ]
+            "C": [ 2 ],
+            "D": [ 179 ],
+            "Q": [ 34 ],
+            "R": [ 11 ]
           }
         },
         "out.spdif_clk_SB_DFFR_Q_D_SB_LUT4_O": {
@@ -13734,8 +13685,8 @@
             "I0": [ "0" ],
             "I1": [ "0" ],
             "I2": [ "0" ],
-            "I3": [ 37 ],
-            "O": [ 183 ]
+            "I3": [ 34 ],
+            "O": [ 179 ]
           }
         },
         "out.spdif_out_SB_DFFN_Q": {
@@ -13753,9 +13704,9 @@
             "Q": "output"
           },
           "connections": {
-            "C": [ 55 ],
-            "D": [ 58 ],
-            "Q": [ 8 ]
+            "C": [ 2 ],
+            "D": [ 54 ],
+            "Q": [ 7 ]
           }
         },
         "pin_user_sw_SB_LUT4_I3": {
@@ -13780,36 +13731,7 @@
             "I1": [ "0" ],
             "I2": [ "0" ],
             "I3": [ 6 ],
-            "O": [ 184 ]
-          }
-        },
-        "pll_inst": {
-          "hide_name": 0,
-          "type": "SB_PLL40_CORE",
-          "parameters": {
-            "DIVF": "0111111",
-            "DIVQ": "101",
-            "DIVR": "0000",
-            "FEEDBACK_PATH": "SIMPLE",
-            "FILTER_RANGE": "001"
-          },
-          "attributes": {
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "splitstreamer.v:45.3-51.2"
-          },
-          "port_directions": {
-            "BYPASS": "input",
-            "LOCK": "output",
-            "PLLOUTGLOBAL": "output",
-            "REFERENCECLK": "input",
-            "RESETB": "input"
-          },
-          "connections": {
-            "BYPASS": [ "0" ],
-            "LOCK": [ 9 ],
-            "PLLOUTGLOBAL": [ 55 ],
-            "REFERENCECLK": [ 2 ],
-            "RESETB": [ "1" ]
+            "O": [ 180 ]
           }
         },
         "smu.state_bclk_SB_DFFR_Q": {
@@ -13828,10 +13750,35 @@
             "R": "input"
           },
           "connections": {
-            "C": [ 55 ],
+            "C": [ 2 ],
             "D": [ "1" ],
-            "Q": [ 36 ],
-            "R": [ 184 ]
+            "Q": [ 181 ],
+            "R": [ 180 ]
+          }
+        },
+        "smu.state_bclk_SB_LUT4_I3": {
+          "hide_name": 0,
+          "type": "SB_LUT4",
+          "parameters": {
+            "LUT_INIT": "0000000011111111"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:12.34-13.52"
+          },
+          "port_directions": {
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "I0": [ "0" ],
+            "I1": [ "0" ],
+            "I2": [ "0" ],
+            "I3": [ 181 ],
+            "O": [ 11 ]
           }
         },
         "smu.state_fclk_SB_DFFR_Q": {
@@ -13852,8 +13799,8 @@
           "connections": {
             "C": [ 4 ],
             "D": [ "1" ],
-            "Q": [ 185 ],
-            "R": [ 13 ]
+            "Q": [ 182 ],
+            "R": [ 11 ]
           }
         },
         "smu.state_fclk_SB_LUT4_I3": {
@@ -13874,11 +13821,11 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 12 ],
-            "I1": [ 186 ],
-            "I2": [ 65 ],
-            "I3": [ 185 ],
-            "O": [ 161 ]
+            "I0": [ 10 ],
+            "I1": [ 183 ],
+            "I2": [ 61 ],
+            "I3": [ 182 ],
+            "O": [ 157 ]
           }
         },
         "smu.state_fclk_SB_LUT4_I3_1": {
@@ -13901,9 +13848,9 @@
           "connections": {
             "I0": [ "0" ],
             "I1": [ "0" ],
-            "I2": [ 186 ],
-            "I3": [ 185 ],
-            "O": [ 11 ]
+            "I2": [ 183 ],
+            "I3": [ 182 ],
+            "O": [ 9 ]
           }
         },
         "smu.state_fclk_SB_LUT4_I3_I1_SB_LUT4_O": {
@@ -13924,18 +13871,18 @@
             "O": "output"
           },
           "connections": {
-            "I0": [ 29 ],
-            "I1": [ 24 ],
-            "I2": [ 20 ],
-            "I3": [ 15 ],
-            "O": [ 186 ]
+            "I0": [ 27 ],
+            "I1": [ 22 ],
+            "I2": [ 18 ],
+            "I3": [ 13 ],
+            "O": [ 183 ]
           }
         }
       },
       "netnames": {
         "blue": {
           "hide_name": 0,
-          "bits": [ 7 ],
+          "bits": [ "0" ],
           "attributes": {
             "src": "splitstreamer.v:11.17-11.21"
           }
@@ -13950,7 +13897,7 @@
         },
         "buffer.count": {
           "hide_name": 0,
-          "bits": [ 29, 24, 20, 15, 12 ],
+          "bits": [ 27, 22, 18, 13, 10 ],
           "attributes": {
             "hdlname": "buffer count",
             "src": "splitstreamer.v:70.3-81.2|fifo.v:22.31-22.36"
@@ -13958,28 +13905,28 @@
         },
         "buffer.count_SB_DFFER_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 14 ],
+          "bits": [ 12 ],
           "attributes": {
             "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
           }
         },
         "buffer.count_SB_DFFER_Q_2_D": {
           "hide_name": 0,
-          "bits": [ 19 ],
+          "bits": [ 17 ],
           "attributes": {
             "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
           }
         },
         "buffer.count_SB_DFFER_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 23 ],
+          "bits": [ 21 ],
           "attributes": {
             "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
           }
         },
         "buffer.count_SB_DFFER_Q_3_D_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 30, 26, 22, 17, 187 ],
+          "bits": [ 28, 24, 20, 15, 184 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:33.26-33.27",
@@ -13988,7 +13935,7 @@
         },
         "buffer.count_SB_DFFER_Q_4_D": {
           "hide_name": 0,
-          "bits": [ 30, 25, 21, 16, 32 ],
+          "bits": [ 28, 23, 19, 14, 30 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:33.26-33.27"
@@ -13996,7 +13943,7 @@
         },
         "buffer.count_SB_DFFER_Q_4_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 29, 34, 33, 31 ],
+          "bits": [ "0", 27, 32, 31, 29 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:70.3-81.2|fifo.v:49.33-49.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14004,14 +13951,14 @@
         },
         "buffer.count_SB_DFFER_Q_D": {
           "hide_name": 0,
-          "bits": [ 10 ],
+          "bits": [ 8 ],
           "attributes": {
             "src": "splitstreamer.v:70.3-81.2|fifo.v:27.5-54.8"
           }
         },
         "buffer.count_SB_DFFER_Q_D_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 21, 22, 18 ],
+          "bits": [ 14, 15, 16 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14019,7 +13966,7 @@
         },
         "buffer.count_SB_DFFER_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "1", 29, 28, 27, 35 ],
+          "bits": [ "1", 27, 26, 25, 33 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:70.3-81.2|fifo.v:50.33-50.42|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14313,17 +14260,9 @@
             "src": "splitstreamer.v:70.3-81.2|fifo.v:19.24-19.33"
           }
         },
-        "buffer.rst": {
-          "hide_name": 0,
-          "bits": [ 13 ],
-          "attributes": {
-            "hdlname": "buffer rst",
-            "src": "splitstreamer.v:70.3-81.2|fifo.v:6.16-6.19"
-          }
-        },
         "clk": {
           "hide_name": 0,
-          "bits": [ 55 ],
+          "bits": [ 2 ],
           "attributes": {
             "src": "splitstreamer.v:17.6-17.9"
           }
@@ -14372,7 +14311,7 @@
         },
         "green": {
           "hide_name": 0,
-          "bits": [ 7 ],
+          "bits": [ "0" ],
           "attributes": {
             "src": "splitstreamer.v:10.17-10.22"
           }
@@ -14409,14 +14348,6 @@
             "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:15.5-15.22"
           }
         },
-        "in.rst": {
-          "hide_name": 0,
-          "bits": [ 13 ],
-          "attributes": {
-            "hdlname": "in rst",
-            "src": "splitstreamer.v:58.14-65.2|i2s_receive1.v:2.24-2.27"
-          }
-        },
         "in.sck": {
           "hide_name": 0,
           "bits": [ 3 ],
@@ -14445,14 +14376,14 @@
         },
         "optical_out": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "src": "splitstreamer.v:32.6-32.17"
           }
         },
         "out.bit_idx": {
           "hide_name": 0,
-          "bits": [ 52, 51, 48, 45, 41, 39 ],
+          "bits": [ 49, 48, 45, 42, 38, 36 ],
           "attributes": {
             "hdlname": "out bit_idx",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:48.15-48.22"
@@ -14460,49 +14391,49 @@
         },
         "out.bit_idx_SB_DFFNR_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 40 ],
+          "bits": [ 37 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:56.5-71.8"
           }
         },
         "out.bit_idx_SB_DFFNR_Q_2_D": {
           "hide_name": 0,
-          "bits": [ 44 ],
+          "bits": [ 41 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:56.5-71.8"
           }
         },
         "out.bit_idx_SB_DFFNR_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 47 ],
+          "bits": [ 44 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:56.5-71.8"
           }
         },
         "out.bit_idx_SB_DFFNR_Q_4_D": {
           "hide_name": 0,
-          "bits": [ 50 ],
+          "bits": [ 47 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:56.5-71.8"
           }
         },
         "out.bit_idx_SB_DFFNR_Q_5_D": {
           "hide_name": 0,
-          "bits": [ 53 ],
+          "bits": [ 50 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:56.5-71.8"
           }
         },
         "out.bit_idx_SB_DFFNR_Q_D": {
           "hide_name": 0,
-          "bits": [ 38 ],
+          "bits": [ 35 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:56.5-71.8"
           }
         },
         "out.bit_idx_SB_DFFNR_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 52, 49, 46, 43, 54 ],
+          "bits": [ "0", 49, 46, 43, 40, 51 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:68.28-68.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14510,7 +14441,7 @@
         },
         "out.bmc_out": {
           "hide_name": 0,
-          "bits": [ 58 ],
+          "bits": [ 54 ],
           "attributes": {
             "hdlname": "out bmc_out",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:74.9-74.16"
@@ -14518,14 +14449,14 @@
         },
         "out.bmc_out_SB_DFFER_Q_D": {
           "hide_name": 0,
-          "bits": [ 56 ],
+          "bits": [ 52 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 59, 60, 58, 61 ],
+          "bits": [ 55, 56, 54, 57 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14533,7 +14464,7 @@
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 52, 51, 62 ],
+          "bits": [ 49, 48, 58 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14541,7 +14472,15 @@
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 66, 118, 65 ],
+          "bits": [ 68, 117, 63, 61 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
+          }
+        },
+        "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_I2": {
+          "hide_name": 0,
+          "bits": [ 64, 65, 66, 67 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14549,7 +14488,7 @@
         },
         "out.bmc_out_SB_DFFER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 62, 63 ],
+          "bits": [ 58, 59 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14557,13 +14496,13 @@
         },
         "out.bmc_out_SB_DFFER_Q_E": {
           "hide_name": 0,
-          "bits": [ 57 ],
+          "bits": [ 53 ],
           "attributes": {
           }
         },
         "out.bmc_phase": {
           "hide_name": 0,
-          "bits": [ 71 ],
+          "bits": [ 80 ],
           "attributes": {
             "hdlname": "out bmc_phase",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:75.9-75.18"
@@ -14571,13 +14510,13 @@
         },
         "out.bmc_phase_SB_DFFER_Q_D": {
           "hide_name": 0,
-          "bits": [ 70 ],
+          "bits": [ 79 ],
           "attributes": {
           }
         },
         "out.bmc_phase_SB_DFFER_Q_E": {
           "hide_name": 0,
-          "bits": [ 61, 71 ],
+          "bits": [ 57, 80 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14585,7 +14524,7 @@
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I1": {
           "hide_name": 0,
-          "bits": [ 72, 73, 74 ],
+          "bits": [ 81, 82, 83 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14593,7 +14532,7 @@
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ 83, 81, 79, 77, 75, 74 ],
+          "bits": [ 92, 90, 88, 86, 84, 83 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:101.17-101.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:37.23-37.25"
@@ -14601,7 +14540,7 @@
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_CI": {
           "hide_name": 0,
-          "bits": [ "1", 83, 81, 79, 77, 75 ],
+          "bits": [ "1", 92, 90, 88, 86, 84 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:101.17-101.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14609,7 +14548,7 @@
         },
         "out.bmc_phase_SB_DFFER_Q_E_SB_LUT4_O_I3_SB_CARRY_CO_I1": {
           "hide_name": 0,
-          "bits": [ 83, 84, 82, 80, 78, 76 ],
+          "bits": [ 92, 93, 91, 89, 87, 85 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:101.17-101.28|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:49.21-49.23"
@@ -14617,7 +14556,7 @@
         },
         "out.bmc_phase_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 65, 155, 157, 69 ],
+          "bits": [ 61, 143, 145, 78 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14665,7 +14604,7 @@
         },
         "out.clk": {
           "hide_name": 0,
-          "bits": [ 55 ],
+          "bits": [ 2 ],
           "attributes": {
             "hdlname": "out clk",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:3.24-3.27"
@@ -14689,7 +14628,7 @@
         },
         "out.frame_count": {
           "hide_name": 0,
-          "bits": [ 112, 111, 108, 105, 102, 99, 96, 93, 89, 87 ],
+          "bits": [ 76, 74, 72, 73, 70, 71, 75, 69, 64, 65 ],
           "attributes": {
             "hdlname": "out frame_count",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:50.15-50.26"
@@ -14697,77 +14636,77 @@
         },
         "out.frame_count_SB_DFFNER_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 88 ],
+          "bits": [ 96 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_2_D": {
           "hide_name": 0,
-          "bits": [ 92 ],
+          "bits": [ 99 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 95 ],
+          "bits": [ 101 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_4_D": {
           "hide_name": 0,
-          "bits": [ 98 ],
+          "bits": [ 103 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_5_D": {
           "hide_name": 0,
-          "bits": [ 101 ],
+          "bits": [ 105 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_6_D": {
           "hide_name": 0,
-          "bits": [ 104 ],
+          "bits": [ 107 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_7_D": {
           "hide_name": 0,
-          "bits": [ 107 ],
+          "bits": [ 109 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_8_D": {
           "hide_name": 0,
-          "bits": [ 110 ],
+          "bits": [ 111 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_9_D": {
           "hide_name": 0,
-          "bits": [ 113 ],
+          "bits": [ 112 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_D": {
           "hide_name": 0,
-          "bits": [ 85 ],
+          "bits": [ 94 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.36-66.78"
           }
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I0": {
           "hide_name": 0,
-          "bits": [ 90, "0", 93, 94 ],
+          "bits": [ 97, "0", 64, 98 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.63-66.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14775,7 +14714,7 @@
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I0_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 89, 87, 115, 116 ],
+          "bits": [ 64, 65, 114, 115 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14783,7 +14722,7 @@
         },
         "out.frame_count_SB_DFFNER_Q_D_SB_LUT4_O_I3": {
           "hide_name": 0,
-          "bits": [ "0", 112, 109, 106, 103, 100, 97, 94, 91, 114 ],
+          "bits": [ "0", 76, 110, 108, 106, 104, 102, 100, 98, 113 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:66.63-66.78|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:51.21-51.22"
@@ -14791,7 +14730,7 @@
         },
         "out.lr": {
           "hide_name": 0,
-          "bits": [ 118 ],
+          "bits": [ 117 ],
           "attributes": {
             "hdlname": "out lr",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:49.15-49.17"
@@ -14799,21 +14738,21 @@
         },
         "out.lr_SB_DFFNER_Q_D": {
           "hide_name": 0,
-          "bits": [ 117 ],
+          "bits": [ 116 ],
           "attributes": {
           }
         },
         "out.lr_SB_LUT4_I3_I2": {
           "hide_name": 0,
-          "bits": [ 42, 118 ],
+          "bits": [ 39, "0", 48, 49 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
+            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:68.28-68.39|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/arith_map.v:62.5-70.4|C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
         "out.lr_SB_LUT4_I3_I2_SB_LUT4_O_I1": {
           "hide_name": 0,
-          "bits": [ 119, 52, 51 ],
+          "bits": [ 118, 49, 48 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -14821,7 +14760,7 @@
         },
         "out.lr_SB_LUT4_I3_O": {
           "hide_name": 0,
-          "bits": [ 86 ],
+          "bits": [ 95 ],
           "attributes": {
           }
         },
@@ -14937,51 +14876,27 @@
         },
         "out.preamble_type": {
           "hide_name": 0,
-          "bits": [ "x", 67, 64, 66 ],
+          "bits": [ "x", 63, 60, 62 ],
           "attributes": {
             "onehot": "00000000000000000000000000000001"
           }
         },
         "out.preamble_type_SB_DFFR_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 121 ],
+          "bits": [ 120 ],
           "attributes": {
           }
         },
         "out.preamble_type_SB_DFFR_Q_2_D": {
           "hide_name": 0,
-          "bits": [ 123 ],
+          "bits": [ 121 ],
           "attributes": {
-          }
-        },
-        "out.preamble_type_SB_DFFR_Q_2_D_SB_LUT4_O_I0": {
-          "hide_name": 0,
-          "bits": [ 118, 122, 64, 65 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "out.preamble_type_SB_DFFR_Q_2_D_SB_LUT4_O_I0_SB_LUT4_O_I2": {
-          "hide_name": 0,
-          "bits": [ 89, 87, 124, 125 ],
-          "attributes": {
-            "force_downto": "00000000000000000000000000000001",
-            "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
           }
         },
         "out.preamble_type_SB_DFFR_Q_D": {
           "hide_name": 0,
-          "bits": [ 120 ],
+          "bits": [ 119 ],
           "attributes": {
-          }
-        },
-        "out.rst": {
-          "hide_name": 0,
-          "bits": [ 13 ],
-          "attributes": {
-            "hdlname": "out rst",
-            "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:2.24-2.27"
           }
         },
         "out.sample_rate_code": {
@@ -14994,7 +14909,7 @@
         },
         "out.shift_data": {
           "hide_name": 0,
-          "bits": [ 167, 165, 163, 159, 157, 155, 153, 149, 147, 145, 143, 141, 139, 137, 135, 133, 131, 130, 181, 179, 177, 175, 173, 171, 169, 150, 128, 68 ],
+          "bits": [ 163, 161, 159, 155, 153, 151, 149, 145, 143, 141, 139, 137, 135, 133, 131, 129, 127, 126, 177, 175, 173, 171, 169, 167, 165, 146, 124, 77 ],
           "attributes": {
             "hdlname": "out shift_data",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:52.16-52.26"
@@ -15002,140 +14917,140 @@
         },
         "out.shift_data_SB_DFFR_Q_10_D": {
           "hide_name": 0,
-          "bits": [ 129 ],
+          "bits": [ 125 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_11_D": {
           "hide_name": 0,
-          "bits": [ 132 ],
+          "bits": [ 128 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_12_D": {
           "hide_name": 0,
-          "bits": [ 134 ],
+          "bits": [ 130 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_13_D": {
           "hide_name": 0,
-          "bits": [ 136 ],
+          "bits": [ 132 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_14_D": {
           "hide_name": 0,
-          "bits": [ 138 ],
+          "bits": [ 134 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_15_D": {
           "hide_name": 0,
-          "bits": [ 140 ],
+          "bits": [ 136 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_16_D": {
           "hide_name": 0,
-          "bits": [ 142 ],
+          "bits": [ 138 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_17_D": {
           "hide_name": 0,
-          "bits": [ 144 ],
+          "bits": [ 140 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_18_D": {
           "hide_name": 0,
-          "bits": [ 146 ],
+          "bits": [ 142 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_19_D": {
           "hide_name": 0,
-          "bits": [ 148 ],
+          "bits": [ 144 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_1_D": {
           "hide_name": 0,
-          "bits": [ 127 ],
+          "bits": [ 123 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_20_D": {
           "hide_name": 0,
-          "bits": [ 152 ],
+          "bits": [ 148 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_21_D": {
           "hide_name": 0,
-          "bits": [ 154 ],
+          "bits": [ 150 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_22_D": {
           "hide_name": 0,
-          "bits": [ 156 ],
+          "bits": [ 152 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_23_D": {
           "hide_name": 0,
-          "bits": [ 158 ],
+          "bits": [ 154 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_24_D": {
           "hide_name": 0,
-          "bits": [ 160 ],
+          "bits": [ 156 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_25_D": {
           "hide_name": 0,
-          "bits": [ 164 ],
+          "bits": [ 160 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_26_D": {
           "hide_name": 0,
-          "bits": [ 166 ],
+          "bits": [ 162 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_27_D": {
           "hide_name": 0,
-          "bits": [ 168 ],
+          "bits": [ 164 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_27_D_SB_LUT4_O_I2": {
           "hide_name": 0,
-          "bits": [ 161, 162, 163, 69 ],
+          "bits": [ 157, 158, 159, 78 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -15143,70 +15058,70 @@
         },
         "out.shift_data_SB_DFFR_Q_2_D": {
           "hide_name": 0,
-          "bits": [ 151 ],
+          "bits": [ 147 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_3_D": {
           "hide_name": 0,
-          "bits": [ 170 ],
+          "bits": [ 166 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_4_D": {
           "hide_name": 0,
-          "bits": [ 172 ],
+          "bits": [ 168 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_5_D": {
           "hide_name": 0,
-          "bits": [ 174 ],
+          "bits": [ 170 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_6_D": {
           "hide_name": 0,
-          "bits": [ 176 ],
+          "bits": [ 172 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_7_D": {
           "hide_name": 0,
-          "bits": [ 178 ],
+          "bits": [ 174 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_8_D": {
           "hide_name": 0,
-          "bits": [ 180 ],
+          "bits": [ 176 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_9_D": {
           "hide_name": 0,
-          "bits": [ 182 ],
+          "bits": [ 178 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.shift_data_SB_DFFR_Q_D": {
           "hide_name": 0,
-          "bits": [ 126 ],
+          "bits": [ 122 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:77.5-132.8"
           }
         },
         "out.spdif_clk": {
           "hide_name": 0,
-          "bits": [ 37 ],
+          "bits": [ 34 ],
           "attributes": {
             "hdlname": "out spdif_clk",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:25.9-25.18"
@@ -15214,14 +15129,14 @@
         },
         "out.spdif_clk_SB_DFFR_Q_D": {
           "hide_name": 0,
-          "bits": [ 183 ],
+          "bits": [ 179 ],
           "attributes": {
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:27.5-33.8"
           }
         },
         "out.spdif_out": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "hdlname": "out spdif_out",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:8.24-8.33"
@@ -15229,7 +15144,7 @@
         },
         "out.subframe_data_left": {
           "hide_name": 0,
-          "bits": [ 188, "0", "0", 189, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "bits": [ 185, "0", "0", 186, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out subframe_data_left",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:40.16-40.34",
@@ -15238,7 +15153,7 @@
         },
         "out.subframe_data_right": {
           "hide_name": 0,
-          "bits": [ 190, "0", "0", 191, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+          "bits": [ 187, "0", "0", 188, "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
           "attributes": {
             "hdlname": "out subframe_data_right",
             "src": "splitstreamer.v:98.16-106.2|spdif_transmit.v:41.16-41.35",
@@ -15275,21 +15190,21 @@
         },
         "pin_i2s_out_data": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "src": "splitstreamer.v:14.17-14.33"
           }
         },
         "pin_opt1": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "src": "splitstreamer.v:12.17-12.25"
           }
         },
         "pin_opt2": {
           "hide_name": 0,
-          "bits": [ 8 ],
+          "bits": [ 7 ],
           "attributes": {
             "src": "splitstreamer.v:13.17-13.25"
           }
@@ -15303,14 +15218,14 @@
         },
         "pll_lock": {
           "hide_name": 0,
-          "bits": [ 9 ],
+          "bits": [ "1" ],
           "attributes": {
             "src": "splitstreamer.v:18.6-18.14"
           }
         },
         "red": {
           "hide_name": 0,
-          "bits": [ 7 ],
+          "bits": [ "0" ],
           "attributes": {
             "src": "splitstreamer.v:9.17-9.20"
           }
@@ -15349,7 +15264,7 @@
         },
         "smu.blue": {
           "hide_name": 0,
-          "bits": [ 7 ],
+          "bits": [ "0" ],
           "attributes": {
             "hdlname": "smu blue",
             "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:135.17-135.21"
@@ -15357,7 +15272,7 @@
         },
         "smu.clk": {
           "hide_name": 0,
-          "bits": [ 55 ],
+          "bits": [ 2 ],
           "attributes": {
             "hdlname": "smu clk",
             "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:128.17-128.20"
@@ -15365,7 +15280,7 @@
         },
         "smu.green": {
           "hide_name": 0,
-          "bits": [ 7 ],
+          "bits": [ "0" ],
           "attributes": {
             "hdlname": "smu green",
             "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:134.17-134.22"
@@ -15389,7 +15304,7 @@
         },
         "smu.pll_lock": {
           "hide_name": 0,
-          "bits": [ 9 ],
+          "bits": [ "1" ],
           "attributes": {
             "hdlname": "smu pll_lock",
             "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:129.17-129.25"
@@ -15397,23 +15312,15 @@
         },
         "smu.red": {
           "hide_name": 0,
-          "bits": [ 7 ],
+          "bits": [ "0" ],
           "attributes": {
             "hdlname": "smu red",
             "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:133.17-133.20"
           }
         },
-        "smu.rst": {
-          "hide_name": 0,
-          "bits": [ 13 ],
-          "attributes": {
-            "hdlname": "smu rst",
-            "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:138.17-138.20"
-          }
-        },
         "smu.state_bclk": {
           "hide_name": 0,
-          "bits": [ 36 ],
+          "bits": [ 181 ],
           "attributes": {
             "hdlname": "smu state_bclk",
             "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:156.9-156.19"
@@ -15421,13 +15328,19 @@
         },
         "smu.state_bclk_SB_DFFR_Q_R": {
           "hide_name": 0,
-          "bits": [ 184 ],
+          "bits": [ 180 ],
+          "attributes": {
+          }
+        },
+        "smu.state_bclk_SB_LUT4_I3_O": {
+          "hide_name": 0,
+          "bits": [ 11 ],
           "attributes": {
           }
         },
         "smu.state_fclk": {
           "hide_name": 0,
-          "bits": [ 185 ],
+          "bits": [ 182 ],
           "attributes": {
             "hdlname": "smu state_fclk",
             "src": "splitstreamer.v:108.24-121.2|splitstreamer.v:144.9-144.19"
@@ -15435,7 +15348,7 @@
         },
         "smu.state_fclk_SB_LUT4_I3_1_O": {
           "hide_name": 0,
-          "bits": [ 11, 12 ],
+          "bits": [ 9, 10 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
@@ -15443,17 +15356,10 @@
         },
         "smu.state_fclk_SB_LUT4_I3_I1": {
           "hide_name": 0,
-          "bits": [ 186, 185 ],
+          "bits": [ 183, 182 ],
           "attributes": {
             "force_downto": "00000000000000000000000000000001",
             "src": "C:\\Users\\niekt\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:6.21-6.22"
-          }
-        },
-        "smu_rst": {
-          "hide_name": 0,
-          "bits": [ 13 ],
-          "attributes": {
-            "src": "splitstreamer.v:23.6-23.13"
           }
         }
       }

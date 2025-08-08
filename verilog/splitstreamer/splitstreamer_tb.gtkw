@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Thu Aug 07 18:20:03 2025
+[*] Thu Aug 07 18:56:16 2025
 [*]
 [dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.vcd"
-[dumpfile_mtime] "Thu Aug 07 17:55:20 2025"
-[dumpfile_size] 135963
+[dumpfile_mtime] "Thu Aug 07 18:47:39 2025"
+[dumpfile_size] 151411
 [savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.gtkw"
-[timestart] 19186900
+[timestart] 0
 [size] 2560 1369
 [pos] -1 -1
-*-17.260551 5580000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-22.305616 27860000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] splitstreamer_tb.
 [treeopen] splitstreamer_tb.uut.
 [treeopen] splitstreamer_tb.uut.out.
@@ -33,14 +33,15 @@ splitstreamer_tb.red
 splitstreamer_tb.send_i2s_word.word[31:0]
 splitstreamer_tb.uut.fifo_in_data_left[31:0]
 splitstreamer_tb.uut.fifo_in_data_right[31:0]
+splitstreamer_tb.uut.fifo_out_data_left[31:0]
+splitstreamer_tb.uut.fifo_out_data_right[31:0]
 splitstreamer_tb.uut.fifo_out_data_left_reverse[31:0]
 splitstreamer_tb.uut.fifo_out_data_right_reverse[31:0]
 @28
 splitstreamer_tb.uut.out.spdif_clk
-splitstreamer_tb.uut.out.shift_data[27:0]
 @22
+splitstreamer_tb.uut.out.shift_data[27:0]
 splitstreamer_tb.uut.out.subframe_data_left[27:0]
-@23
 splitstreamer_tb.uut.out.subframe_data_right[27:0]
 @28
 splitstreamer_tb.uut.out.bmc_out
@@ -51,5 +52,10 @@ splitstreamer_tb.uut.out.preamble_type[3:0]
 splitstreamer_tb.uut.out.preamble_b.idx[5:0]
 splitstreamer_tb.uut.out.preamble_m.idx[5:0]
 splitstreamer_tb.uut.out.preamble_w.idx[5:0]
+@28
+splitstreamer_tb.uut.pin_opt1
+splitstreamer_tb.uut.pin_opt2
+@29
+splitstreamer_tb.uut.out.validity
 [pattern_trace] 1
 [pattern_trace] 0

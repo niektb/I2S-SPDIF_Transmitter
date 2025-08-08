@@ -23,13 +23,8 @@ module spdif_transmit (
     end
 
     reg spdif_clk = 0;
-    // Generate SPDIF bit clock, divided by 2 from the main clock
-    always @(posedge clk or posedge rst) begin
-        if (rst) begin
-            spdif_clk <= 0;
-        end else begin
-            spdif_clk <= ~spdif_clk; // Toggle SPDIF clock
-        end
+    always @(posedge clk) begin
+        spdif_clk <= spdif_clk + 1'b1;
     end
 
     reg [7:0] ch_status_idx = 0;
@@ -53,12 +48,12 @@ module spdif_transmit (
     reg [3:0]  preamble_code;
     reg [3:0]  preamble_type;
 
-    always @(negedge spdif_clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             bit_idx <= 0;
             lr <= 0;
             frame_count <= 0;
-        end else begin
+        end else if (spdif_clk == 0) begin
             if (bit_idx == 31) begin
                 bit_idx <= 0;
                 lr <= ~lr;
@@ -74,7 +69,7 @@ module spdif_transmit (
     reg bmc_out = 0;
     reg bmc_phase = 0;
 
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             bmc_out <= 0;
             bmc_phase <= 0;
@@ -131,7 +126,7 @@ module spdif_transmit (
         end
     end
 
-    always @(negedge clk)
+    always @(posedge clk)
         spdif_out <= bmc_out;
 
     // subframe creation function
