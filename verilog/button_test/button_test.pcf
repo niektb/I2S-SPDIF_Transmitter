@@ -1,0 +1,27 @@
+# Additional pins can be defined here as needed for other functionalities
+# set_io pin_cdone 7
+# set_io pin_creset 8
+set_io pin_i2s_out_data 9
+set_io pin_i2s_out_fclk 10
+set_io pin_i2s_out_bclk 11
+set_io pin_usb_pu 12
+set_io pin_usb_dn 13
+set_io pin_spi_mosi 14
+set_io pin_spi_sck 15
+set_io pin_spi_ss 16
+set_io pin_spi_miso 17
+set_io pin_user_sw 18
+set_io pin_usb_dp 21
+set_io pin_uart_rx 23
+set_io pin_uart_tx 25
+set_io pin_opt2 26
+set_io pin_opt1 27
+set_io pin_clk_24m576hz 35
+set_io pin_clk_12mhz 37
+set_io red 39
+set_io blue 40
+set_io green 41
+set_io pin_i2s_bclk_pll 44
+set_io pin_i2s_bclk 45
+set_io pin_i2s_data 46
+set_io pin_i2s_fclk 47

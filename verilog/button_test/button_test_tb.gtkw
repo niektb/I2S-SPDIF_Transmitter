@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Aug 09 07:01:46 2025
+[*]
+[dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\button_test\button_test_tb.vcd"
+[dumpfile_mtime] "Sat Aug 09 07:01:16 2025"
+[dumpfile_size] 781
+[savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\button_test\button_test_tb.gtkw"
+[timestart] 0
+[size] 1278 1360
+[pos] 1168 -105
+*-13.859063 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] button_test_tb.
+[sst_width] 197
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 420
+@28
+button_test_tb.uut.blue
+button_test_tb.uut.clk
+button_test_tb.uut.green
+button_test_tb.uut.pin_user_sw
+button_test_tb.uut.red
+button_test_tb.uut.user_sw_ff[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
