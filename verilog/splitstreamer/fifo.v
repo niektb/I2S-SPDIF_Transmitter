@@ -26,7 +26,7 @@ module fifo #(
     assign full  = (count == DEPTH);
     assign empty = (count == 0);
 
-    always @(posedge clk or posedge rst) begin
+    always @(posedge clk) begin
         if (rst) begin
             wr_ptr <= 0;
             rd_ptr <= 0;

@@ -1,28 +1,32 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Fri Aug 08 18:56:01 2025
+[*] Thu Aug 28 10:28:14 2025
 [*]
 [dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.vcd"
-[dumpfile_mtime] "Fri Aug 08 18:55:01 2025"
-[dumpfile_size] 2954101
+[dumpfile_mtime] "Thu Aug 28 10:27:45 2025"
+[dumpfile_size] 3050077
 [savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer\splitstreamer_tb.gtkw"
-[timestart] 770200000
+[timestart] 0
 [size] 2560 1369
 [pos] -1 -1
-*-24.602604 1003900000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-21.638103 51040000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] splitstreamer_tb.
 [treeopen] splitstreamer_tb.uut.
 [treeopen] splitstreamer_tb.uut.out.
 [sst_width] 197
 [signals_width] 294
 [sst_expanded] 1
-[sst_vpaned_height] 423
+[sst_vpaned_height] 422
 @28
 splitstreamer_tb.uut.smu_empty
 splitstreamer_tb.uut.smu_full
 splitstreamer_tb.uut.smu_rst
 splitstreamer_tb.uut.smu_write_en
 splitstreamer_tb.uut.smu_read_en
+splitstreamer_tb.uut.smu.state_fclk
+splitstreamer_tb.uut.smu.state_bclk
+splitstreamer_tb.uut.smu.fclk_d
+splitstreamer_tb.uut.smu.fclk_dd
 splitstreamer_tb.pin_i2s_bclk_pll
 splitstreamer_tb.pin_i2s_bclk
 splitstreamer_tb.pin_i2s_data
@@ -31,6 +35,21 @@ splitstreamer_tb.pin_opt1
 splitstreamer_tb.red
 @22
 splitstreamer_tb.send_i2s_word.word[31:0]
+@28
+splitstreamer_tb.uut.in.rst
+splitstreamer_tb.uut.in.rx_en
+splitstreamer_tb.uut.in.sck
+splitstreamer_tb.uut.in.sd
+splitstreamer_tb.uut.in.ws
+splitstreamer_tb.uut.in.wsdd
+splitstreamer_tb.uut.in.wsd
+@29
+splitstreamer_tb.uut.in.wsp
+@28
+splitstreamer_tb.uut.in.data_left_enable
+splitstreamer_tb.uut.in.data_right_enable
+@22
+splitstreamer_tb.uut.in.shift_reg[31:0]
 splitstreamer_tb.uut.fifo_in_data_left[31:0]
 splitstreamer_tb.uut.fifo_in_data_right[31:0]
 splitstreamer_tb.uut.fifo_out_data_left[31:0]
@@ -56,7 +75,7 @@ splitstreamer_tb.uut.out.preamble_w.idx[5:0]
 splitstreamer_tb.uut.pin_opt1
 splitstreamer_tb.uut.pin_opt2
 splitstreamer_tb.uut.out.validity
-@25
+@24
 splitstreamer_tb.uut.out.frame_count[9:0]
 [pattern_trace] 1
 [pattern_trace] 0

@@ -26,7 +26,7 @@ module splitstreamer_tb;
     // Clocks
     always #20 pin_i2s_bclk_pll = (pin_i2s_bclk_pll === 1'b0);  // 25 MHz PLL output clock
     always #40 pin_i2s_bclk = (pin_i2s_bclk === 1'b0);          // 12.5 MHz I2S bit clock
-    always #2560 pin_i2s_fclk = (pin_i2s_fclk === 1'b0);
+   // always #2560 pin_i2s_fclk = (pin_i2s_fclk === 1'b0);
 
     initial begin
         // VCD dump for waveform
@@ -40,7 +40,7 @@ module splitstreamer_tb;
         // Release reset
         pin_user_sw = 1;
 
-        send_i2s_word($random, 0);
+        send_i2s_word({32{1'b1}}, 0);
 
         // Reset the DUT
         pin_user_sw = 0; // Assert reset
@@ -48,6 +48,11 @@ module splitstreamer_tb;
         #100;
         // Release reset
         pin_user_sw = 1;
+
+        repeat (5) begin
+            send_i2s_word({32{1'b1}}, 0);
+            send_i2s_word({32{1'b1}}, 1);
+        end
 
         // Send I2S data (simulate stereo frame)
         repeat (200) begin

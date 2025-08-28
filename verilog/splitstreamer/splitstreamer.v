@@ -59,6 +59,7 @@ assign pll_lock = 1'b1; // Simulate PLL lock
 
 i2s_receive1 in (
     .rst(smu_rst), // Assuming no reset for simplicity
+    .rx_en(smu_write_en), // Take SMU output for enabling reception
     .sck(pin_i2s_bclk),
     .ws(pin_i2s_fclk),
     .sd(pin_i2s_data),
@@ -144,13 +145,27 @@ module system_management_unit
     assign rst = ~pll_lock | ~state_bclk;
 
     reg state_fclk = 0;
-    // monitor that a full fclk period has passed before allowing writes
-    always @(posedge pin_i2s_fclk) begin
+    reg fclk_d;
+    reg fclk_dd;
+    reg [1:0] edge_cnt = 2'b00;
+
+    wire fclk_rising = (pin_i2s_fclk && !fclk_dd);
+    // monitor that a full fclk period has passed before allowing writes (so state_fclk turns high on 2nd positive edge)
+    always @(posedge clk) begin
         if (rst) begin
             state_fclk <= 0;
+            fclk_d <= 0;
+            edge_cnt <= 2'b00;
         end else begin
-            if (state_fclk == 0) begin
-                state_fclk <= 1; // Allow write after first fclk period
+            fclk_d <= pin_i2s_fclk;
+            fclk_dd <= fclk_d;
+
+            if (fclk_rising) begin
+                if (edge_cnt < 2'd2)
+                    edge_cnt <= edge_cnt + 1'b1;
+                
+                if (edge_cnt == 2'd1)
+                    state_fclk <= 1; // Clear state on first fclk rising edge
             end
         end
     end
@@ -162,7 +177,7 @@ module system_management_unit
     end     
 
     reg state_bclk = 0;
-    // monitor that a full fclk period has passed before allowing writes
+    // monitor that a full bclk period has passed before allowing writes
     always @(posedge clk) begin
         if (user_sw_ff[1] == 1'b0 && user_sw_ff[0] == 1'b1) begin
             state_bclk <= 0;
