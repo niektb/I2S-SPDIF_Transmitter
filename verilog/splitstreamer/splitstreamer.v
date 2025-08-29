@@ -53,7 +53,7 @@ SB_PLL40_CORE #(
 );
 
 `else
-assign clk = pin_i2s_bclk_pll; // For simulation, use the input
+assign clk = pin_i2s_bclk_pll; // For simulation, use the input. The testbench generates the clock already on a higher frequency
 assign pll_lock = 1'b1; // Simulate PLL lock
 `endif
 
@@ -151,7 +151,7 @@ module system_management_unit
     reg [1:0] edge_cnt = 2'b00;
 
     wire fclk_falling = (!pin_i2s_fclk && fclk_dd);
-    // monitor that a full fclk period has passed before allowing writes (so state_fclk turns high on 2nd positive edge)
+    // monitor that a full fclk period has passed before allowing reads and writes (so state_fclk turns high on 2nd positive edge)
     always @(posedge clk) begin
         if (rst) begin
             state_fclk <= 0;
@@ -178,7 +178,7 @@ module system_management_unit
     end     
 
     reg state_bclk = 0;
-    // monitor that a full bclk period has passed before allowing writes
+    // monitor that a full bclk period has passed before lifting reset
     always @(posedge clk) begin
         if (user_sw_ff[1] == 1'b0 && user_sw_ff[0] == 1'b1) begin
             state_bclk <= 0;

@@ -1,0 +1,58 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Aug 29 08:57:50 2025
+[*]
+[dumpfile] "C:\GitHub\i2s-spdif-bridge-verilog\i2s_receive\i2s_receive_tb.vcd"
+[dumpfile_mtime] "Fri Aug 29 08:56:11 2025"
+[dumpfile_size] 1181112
+[savefile] "C:\GitHub\i2s-spdif-bridge-verilog\i2s_receive\i2s_receive_tb.gtkw"
+[timestart] 0
+[size] 2560 1369
+[pos] -1 -1
+*-20.563770 2859000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] i2s_receive_tb.
+[treeopen] i2s_receive_tb.util.
+[sst_width] 197
+[signals_width] 233
+[sst_expanded] 1
+[sst_vpaned_height] 423
+@200
+-I2S Transmitter
+@22
+i2s_receive_tb.sent_left[31:0]
+i2s_receive_tb.sent_right[31:0]
+i2s_receive_tb.shift_data[0:63]
+@200
+-I2S Receiver
+@28
+i2s_receive_tb.dut.rst
+i2s_receive_tb.clk
+i2s_receive_tb.dut.sck
+i2s_receive_tb.dut.ws
+i2s_receive_tb.dut.sd
+@22
+i2s_receive_tb.dut.shift_reg[31:0]
+@28
+i2s_receive_tb.dut.wsd
+i2s_receive_tb.dut.wsp
+i2s_receive_tb.dut.data_right_enable
+@22
+i2s_receive_tb.dut.data_right[31:0]
+@28
+i2s_receive_tb.dut.data_left_enable
+@22
+i2s_receive_tb.dut.data_left[31:0]
+@200
+-SMU
+@28
+i2s_receive_tb.rx_en_inst.rst
+i2s_receive_tb.rx_en_inst.clk
+i2s_receive_tb.rx_en_inst.fclk_d
+i2s_receive_tb.rx_en_inst.fclk_dd
+@29
+i2s_receive_tb.rx_en_inst.fclk_falling
+@28
+i2s_receive_tb.rx_en_inst.rx_en
+i2s_receive_tb.rx_en_inst.state_fclk
+[pattern_trace] 1
+[pattern_trace] 0
