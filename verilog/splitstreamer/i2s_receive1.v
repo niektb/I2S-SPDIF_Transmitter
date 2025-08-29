@@ -23,8 +23,8 @@ always @(posedge clk) begin
         data_right <= 32'b0; // Reset right channel data    
         wsd <= 1'b0; // Reset word select state
         wsdd <= 1'b0; // Reset last word select state 
-        data_left_enable <= 1'b0; // Disable left channel data      
-        data_right_enable <= 1'b0; // Disable right channel data
+        //data_left_enable <= 1'b0; // Disable left channel data      
+        //data_right_enable <= 1'b0; // Disable right channel data
     end else if (rx_en && sck) begin // this only works when CLK is 2x sck
         shift_reg <= {shift_reg[30:0], sd}; // Shift in the serial data
         wsd <= ws; // Store the current state of word select
