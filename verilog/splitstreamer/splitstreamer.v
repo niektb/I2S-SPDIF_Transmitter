@@ -191,7 +191,7 @@ module system_management_unit
             
     assign read_en = ~empty && state_fclk; // Allow read if not empty and state is set
     assign write_en = ~full && state_fclk; // Allow write if not full and state is set
-    assign red = ~rst; // Red LED indicates lock status
+    assign red = user_sw_ff[1]; // Red LED indicates lock status
     assign blue = red; // Red LED indicates lock status
     assign green = red; // Red LED indicates lock status
 
