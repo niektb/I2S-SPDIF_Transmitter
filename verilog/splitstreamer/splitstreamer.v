@@ -60,6 +60,7 @@ assign pll_lock = 1'b1; // Simulate PLL lock
 i2s_receive1 in (
     .rst(smu_rst), // Assuming no reset for simplicity
     .rx_en(smu_write_en), // Take SMU output for enabling reception
+    .clk(clk),
     .sck(pin_i2s_bclk),
     .ws(pin_i2s_fclk),
     .sd(pin_i2s_data),
@@ -149,7 +150,7 @@ module system_management_unit
     reg fclk_dd;
     reg [1:0] edge_cnt = 2'b00;
 
-    wire fclk_rising = (pin_i2s_fclk && !fclk_dd);
+    wire fclk_falling = (!pin_i2s_fclk && fclk_dd);
     // monitor that a full fclk period has passed before allowing writes (so state_fclk turns high on 2nd positive edge)
     always @(posedge clk) begin
         if (rst) begin
@@ -160,7 +161,7 @@ module system_management_unit
             fclk_d <= pin_i2s_fclk;
             fclk_dd <= fclk_d;
 
-            if (fclk_rising) begin
+            if (fclk_falling) begin
                 if (edge_cnt < 2'd2)
                     edge_cnt <= edge_cnt + 1'b1;
                 

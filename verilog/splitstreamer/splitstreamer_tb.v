@@ -26,7 +26,10 @@ module splitstreamer_tb;
     // Clocks
     always #20 pin_i2s_bclk_pll = (pin_i2s_bclk_pll === 1'b0);  // 25 MHz PLL output clock
     always #40 pin_i2s_bclk = (pin_i2s_bclk === 1'b0);          // 12.5 MHz I2S bit clock
-   // always #2560 pin_i2s_fclk = (pin_i2s_fclk === 1'b0);
+    always #2560 pin_i2s_fclk = (pin_i2s_fclk === 1'b0);
+
+    reg [0:63] shift_data;
+    reg [31:0] sent_left, sent_right;
 
     initial begin
         // VCD dump for waveform
@@ -40,43 +43,55 @@ module splitstreamer_tb;
         // Release reset
         pin_user_sw = 1;
 
-        send_i2s_word({32{1'b1}}, 0);
+        pin_i2s_data <= 0;
+        @(negedge pin_i2s_fclk);
 
-        // Reset the DUT
-        pin_user_sw = 0; // Assert reset
-        // Wait for PLL lock (simulated)
-        #100;
-        // Release reset
-        pin_user_sw = 1;
+        // first 2 words will be ignored so send zeroes
+        @(negedge pin_i2s_bclk);
 
-        repeat (5) begin
-            send_i2s_word({32{1'b1}}, 0);
-            send_i2s_word({32{1'b1}}, 1);
+        shift_data = {{32{1'b0}}, {32{1'b0}}};
+        sent_left = shift_data[0:31];
+        sent_right = shift_data[32:63];
+    
+        repeat (31) begin
+            pin_i2s_data <= shift_data[0];
+            shift_data <= shift_data<<1;
+            @(negedge pin_i2s_bclk);
         end
 
-        // Send I2S data (simulate stereo frame)
-        repeat (200) begin
-            // Left channel: 0x12345678
-            send_i2s_word($random, 0);
-            // Right channel: 0x9ABCDEF0
-            send_i2s_word($random, 1);
+        repeat (32) begin
+        pin_i2s_data <= shift_data[0];
+        shift_data <= shift_data<<1;
+        @(negedge pin_i2s_bclk);
+        end
+
+        pin_i2s_data <= shift_data[0];
+
+        repeat (10) begin
+            @(negedge pin_i2s_bclk);
+
+            shift_data = {{$random}, {$random}};
+            sent_left = shift_data[0:31];
+            sent_right = shift_data[32:63];
+        
+            repeat (31) begin
+                pin_i2s_data <= shift_data[0];
+                shift_data <= shift_data<<1;
+                @(negedge pin_i2s_bclk);
+            end
+            
+            repeat (32) begin
+            pin_i2s_data <= shift_data[0];
+            shift_data <= shift_data<<1;
+            @(negedge pin_i2s_bclk);
+            end
+
+            pin_i2s_data <= shift_data[0];
         end
 
         // Wait and finish
         #1000;
         $finish;
     end
-
-    // I2S word sender (MSB first)
-    task send_i2s_word(input [31:0] word, input channel);
-        integer i;
-        begin
-            pin_i2s_fclk = channel;
-            for (i = 31; i >= 0; i = i - 1) begin
-                pin_i2s_data = word[i];
-                @(negedge pin_i2s_bclk);
-            end
-        end
-    endtask
 
 endmodule
