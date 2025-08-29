@@ -1,4 +1,4 @@
-//`define SIM
+`define SIM
 
 module splitstreamer (
     input wire pin_i2s_bclk_pll, // at some point, this should become the PLL output
@@ -104,8 +104,8 @@ spdif_transmit out (
     .clk(clk),
     .data_left(fifo_out_data_left_reverse),
     .data_right(fifo_out_data_right_reverse),
-    .validity(smu_read_en), // Assuming always valid for this example
-    .sample_rate_code(4'b1100), // Example sample rate code
+    .validity(smu_read_en),
+    .sample_rate_code(4'b1100),
     .spdif_out(optical_out) // Output to pin_opt1
 );
 
@@ -114,14 +114,14 @@ system_management_unit smu (
     .clk(clk),
     .pll_lock(pll_lock), // Use the PLL lock signal
     .pin_i2s_fclk(pin_i2s_fclk),
-    .full(smu_full), // Full signal from FIFO not used in this example
-    .empty(smu_empty), // Empty signal from FIFO not used in this example
+    .full(smu_full), // Full signal from FIFO
+    .empty(smu_empty), // Empty signal from FIFO 
     .red(red), // Red LED for lock status
     .green(green), // Green LED for lock status
     .blue(blue), // Blue LED for lock status
-    .write_en(smu_write_en), // Write enable signal not used in this example
-    .read_en(smu_read_en), // Read enable signal not used in this example
-    .rst(smu_rst) // Reset signal not used in this example
+    .write_en(smu_write_en), // Write enable signal 
+    .read_en(smu_read_en), // Read enable signal 
+    .rst(smu_rst) // Reset signal 
 );
 
 endmodule
@@ -151,7 +151,7 @@ module system_management_unit
     reg [1:0] edge_cnt = 2'b00;
 
     wire fclk_falling = (!pin_i2s_fclk && fclk_dd);
-    // monitor that a full fclk period has passed before allowing reads and writes (so state_fclk turns high on 2nd positive edge)
+    // monitor that a full fclk period has passed before allowing reads and   writes (so state_fclk turns high on 2nd positive edge)
     always @(posedge clk) begin
         if (rst) begin
             state_fclk <= 0;
