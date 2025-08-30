@@ -67,7 +67,7 @@ module spdif_transmit (
         integer      i;
     begin
         temp = 28'd0;
-        temp[27:4] = audio_data[23:0];
+        temp[27:4] = audio_data[31:8];
         temp[3]    = validity_bit;
         temp[2]    = user_bit;
         temp[1]    = channel_status_bit;

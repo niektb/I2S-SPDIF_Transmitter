@@ -54,8 +54,8 @@ module spdif_transmit_tb;
 
         // Stimulus: send several sample pairs
         repeat (3) begin
-            data_left  = $random & 32'h00FFFFFF;
-            data_right = $random & 32'h00FFFFFF;
+            data_left  = $random & 32'hFFFFFFFF;
+            data_right = $random & 32'hFFFFFFFF;
             validity   = 0;
             #(256 * CLK_PERIOD); // Wait ~1 audio frame (2 subframes × 64 bits = 128 SPDIF bits)
         end

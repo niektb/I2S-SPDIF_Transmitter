@@ -1,40 +1,82 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Thu Aug 07 18:35:39 2025
+[*] Sat Aug 30 09:03:39 2025
 [*]
 [dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\spdif_transmit\spdif_transmit_tb.vcd"
-[dumpfile_mtime] "Thu Aug 07 18:34:35 2025"
-[dumpfile_size] 49960
+[dumpfile_mtime] "Fri Aug 29 15:42:36 2025"
+[dumpfile_size] 42816
 [savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\spdif_transmit\spdif_transmit_tb.gtkw"
 [timestart] 0
-[size] 2560 1369
-[pos] -295 -9
-*-20.923248 1595000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[size] 1278 1360
+[pos] -8 -1
+*-20.234791 2844000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] spdif_transmit_tb.
 [treeopen] spdif_transmit_tb.dut.
 [sst_width] 256
-[signals_width] 174
+[signals_width] 198
 [sst_expanded] 1
-[sst_vpaned_height] 423
+[sst_vpaned_height] 420
 @28
-spdif_transmit_tb.clk
-spdif_transmit_tb.dut.spdif_clk
-spdif_transmit_tb.rst
+spdif_transmit_tb.dut.rst
+spdif_transmit_tb.dut.sample_rate_code[3:0]
+spdif_transmit_tb.dut.make_subframe.validity_bit
+spdif_transmit_tb.dut.validity
+@200
+-Clock Gen
+@420
+spdif_transmit_tb.dut.CLK_FREQ
+spdif_transmit_tb.dut.SPDIF_BAUD
+spdif_transmit_tb.dut.CLK_DIV
+@28
+spdif_transmit_tb.dut.clk
+spdif_transmit_tb.dut.ce
+spdif_transmit_tb.dut.cs_bit
+spdif_transmit_tb.dut.divcnt
+spdif_transmit_tb.dut.lr
+@200
+-Preamble
+@28
+spdif_transmit_tb.dut.in_preamble
+spdif_transmit_tb.dut.PREAMBLE_B
+spdif_transmit_tb.dut.PREAMBLE_M
+spdif_transmit_tb.dut.PREAMBLE_W
+@24
+spdif_transmit_tb.dut.pre_cnt[2:0]
+@28
+spdif_transmit_tb.dut.pre_shift[7:0]
+spdif_transmit_tb.dut.pick_preamble.is_left
+spdif_transmit_tb.dut.pick_preamble.is_start_of_block
+@200
+-Subframe Gen
 @22
-spdif_transmit_tb.data_left[31:0]
-spdif_transmit_tb.data_right[31:0]
-@800028
+spdif_transmit_tb.dut.ch_status[191:0]
+spdif_transmit_tb.dut.cs_idx[7:0]
+@28
+spdif_transmit_tb.dut.make_subframe.user_bit
+@22
+spdif_transmit_tb.dut.make_subframe.temp[27:0]
+@28
+spdif_transmit_tb.dut.make_subframe.parity
+@420
+spdif_transmit_tb.dut.make_subframe.i
+@28
+spdif_transmit_tb.dut.make_subframe.channel_status_bit
+@22
+spdif_transmit_tb.dut.make_subframe.audio_data[31:0]
+@200
+-Output Gen
+@23
+spdif_transmit_tb.dut.subframe_left[27:0]
+spdif_transmit_tb.dut.subframe_right[27:0]
+spdif_transmit_tb.dut.data_left[31:0]
+spdif_transmit_tb.dut.data_right[31:0]
+@22
+spdif_transmit_tb.dut.frame_count[8:0]
+spdif_transmit_tb.dut.bit_ptr[5:0]
 spdif_transmit_tb.dut.shift_data[27:0]
 @28
-(0)spdif_transmit_tb.dut.shift_data[27:0]
-@1001200
--group_end
-@28
-spdif_transmit_tb.dut.bmc_out
-@29
 spdif_transmit_tb.dut.bmc_phase
-@22
-spdif_transmit_tb.dut.bit_idx[5:0]
-spdif_transmit_tb.dut.preamble_type[3:0]
+spdif_transmit_tb.dut.bmc_out
+spdif_transmit_tb.dut.spdif_out
 [pattern_trace] 1
 [pattern_trace] 0
