@@ -33,8 +33,7 @@ module spdif_transmit_tb;
     );
 
     // Clock generation (~40.69ns period)
-    initial clk = 0;
-    always #(CLK_PERIOD / 2) clk = ~clk;
+    always #(CLK_PERIOD / 2) clk = (clk === 1'b0); 
 
     // Stimulus
     initial begin
@@ -53,7 +52,7 @@ module spdif_transmit_tb;
         rst = 0;
 
         // Stimulus: send several sample pairs
-        repeat (3) begin
+        repeat (20) begin
             data_left  = $random & 32'hFFFFFFFF;
             data_right = $random & 32'hFFFFFFFF;
             validity   = 0;
