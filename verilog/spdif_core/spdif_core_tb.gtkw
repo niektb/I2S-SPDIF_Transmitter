@@ -1,0 +1,37 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Aug 30 10:34:14 2025
+[*]
+[dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\spdif_core\spdif_core_tb.vcd"
+[dumpfile_mtime] "Sat Aug 30 10:32:03 2025"
+[dumpfile_size] 430901
+[savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\spdif_core\spdif_core_tb.gtkw"
+[timestart] 0
+[size] 1278 1360
+[pos] -346 -1
+*-19.452751 2138000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] spdif_core_tb.
+[sst_width] 197
+[signals_width] 166
+[sst_expanded] 1
+[sst_vpaned_height] 420
+@28
+spdif_core_tb.rst_i
+(1)spdif_core_tb.spdif_o2_dly[2:0]
+spdif_core_tb.uut2.spdif_clk
+spdif_core_tb.spdif_o
+spdif_core_tb.bit_out_en_i
+spdif_core_tb.clk_i
+@800028
+spdif_core_tb.spdif_o2_dly[2:0]
+@1001200
+-group_end
+@200
+-UUT2
+@28
+spdif_core_tb.uut2.bmc_phase
+@22
+spdif_core_tb.uut2.data_left[31:0]
+spdif_core_tb.uut2.data_right[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
