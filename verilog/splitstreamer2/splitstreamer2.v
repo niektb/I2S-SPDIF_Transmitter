@@ -26,8 +26,8 @@ wire [31:0] fifo_in_data_left;
 wire [31:0] fifo_in_data_right;
 wire [31:0] fifo_out_data_left;
 wire [31:0] fifo_out_data_right;
-wire [31:0] fifo_out_data_left_reverse;
-wire [31:0] fifo_out_data_right_reverse;
+//wire [31:0] fifo_out_data_left_reverse;
+//wire [31:0] fifo_out_data_right_reverse;
 wire smu_validity;
 
 wire optical_out;
@@ -84,26 +84,26 @@ fifo #(
     .empty(smu_empty) // Empty signal not used in this example
 );
 
-reverse_bits #(
-    .WIDTH(32)
-) reverse_left (
-    .in(fifo_out_data_left),
-    .out(fifo_out_data_left_reverse) // Reverse bits for left channel
-);
-
-reverse_bits #(
-    .WIDTH(32)
-) reverse_right (
-    .in(fifo_out_data_right),
-    .out(fifo_out_data_right_reverse) // Reverse bits for right channel
-);
+//reverse_bits #(
+//    .WIDTH(32)
+//) reverse_left (
+//    .in(fifo_out_data_left),
+//    .out(fifo_out_data_left_reverse) // Reverse bits for left channel
+//);
+//
+//reverse_bits #(
+//    .WIDTH(32)
+//) reverse_right (
+//    .in(fifo_out_data_right),
+//    .out(fifo_out_data_right_reverse) // Reverse bits for right channel
+//);
 
 // Instantiate the SPDIF transmitter
 spdif_transmit2 out (
     .rst(smu_rst),
     .clk(clk),
-    .data_left(fifo_out_data_left_reverse),
-    .data_right(fifo_out_data_right_reverse),
+    .data_left(fifo_out_data_left),
+    .data_right(fifo_out_data_right),
     .validity(smu_read_en), // Assuming always valid for this example
     .sample_rate_code(4'b1100), // Example sample rate code
     .spdif_out(optical_out) // Output to pin_opt1
