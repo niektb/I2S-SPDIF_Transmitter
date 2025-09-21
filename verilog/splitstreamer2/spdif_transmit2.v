@@ -40,8 +40,12 @@ module spdif_transmit2 (
             parity         <= 0;
         end else begin
             // Latch new sample every 4th bit (bit_counter == 3)
-            if (bit_counter == 6'd3)
-                data_in_buffer <= data_left[31:8]; // 24 MSBs
+            if (bit_counter == 6'd3) begin
+                if (frame_counter[0] == 1'b1)
+                    data_in_buffer <= data_right[31:8]; // 24 MSBs
+                else
+                    data_in_buffer <= data_left[31:8]; // 24 MSBs
+            end
 
             // Parity calculation (XOR of all bits + channel status)
             parity <= ^data_in_buffer ^ channel_status_shift[23];
