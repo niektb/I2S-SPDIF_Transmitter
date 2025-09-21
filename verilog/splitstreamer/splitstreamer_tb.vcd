@@ -1,5 +1,5 @@
 $date
-	Fri Aug 29 13:07:18 2025
+	Sun Sep 14 14:00:49 2025
 $end
 $version
 	Icarus Verilog
@@ -337,9 +337,9 @@ $var wire 1 & pin_i2s_fclk $end
 $var wire 1 ' pin_user_sw $end
 $var wire 1 / pll_lock $end
 $var wire 1 2 read_en $end
-$var wire 1 ! red $end
 $var wire 1 1 rst $end
 $var wire 1 0 write_en $end
+$var wire 1 ! red $end
 $var reg 2 X" edge_cnt [1:0] $end
 $var reg 1 Y" fclk_d $end
 $var reg 1 Z" fclk_dd $end
@@ -515,9 +515,9 @@ $end
 0+
 0$
 #40000
-0O
 0K
 0I
+0O
 0N
 0M
 b0 ;
@@ -561,6 +561,9 @@ b1 ]"
 0+
 0$
 #160000
+16
+1=
+1!
 b11 ]"
 0b
 1+

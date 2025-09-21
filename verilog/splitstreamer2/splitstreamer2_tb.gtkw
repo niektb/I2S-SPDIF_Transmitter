@@ -1,0 +1,79 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sun Sep 14 12:08:48 2025
+[*]
+[dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.vcd"
+[dumpfile_mtime] "Sat Sep 13 18:12:23 2025"
+[dumpfile_size] 199657
+[savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.gtkw"
+[timestart] 0
+[size] 1278 664
+[pos] -138 -131
+*-21.084000 24720000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] splitstreamer2_tb.
+[treeopen] splitstreamer2_tb.uut.
+[sst_width] 197
+[signals_width] 368
+[sst_expanded] 1
+[sst_vpaned_height] 175
+@22
+splitstreamer2_tb.sent_right[31:0]
+splitstreamer2_tb.sent_left[31:0]
+@28
+splitstreamer2_tb.uut.smu_empty
+splitstreamer2_tb.uut.smu_full
+splitstreamer2_tb.uut.smu_rst
+splitstreamer2_tb.uut.smu_write_en
+splitstreamer2_tb.uut.smu_read_en
+splitstreamer2_tb.uut.smu.state_fclk
+splitstreamer2_tb.uut.smu.state_bclk
+splitstreamer2_tb.uut.smu.fclk_d
+splitstreamer2_tb.uut.smu.fclk_dd
+splitstreamer2_tb.uut.pin_i2s_bclk_pll
+splitstreamer2_tb.uut.pin_i2s_bclk
+splitstreamer2_tb.uut.pin_i2s_data
+splitstreamer2_tb.uut.pin_i2s_fclk
+splitstreamer2_tb.uut.pin_opt1
+splitstreamer2_tb.uut.red
+splitstreamer2_tb.uut.in.rx_en
+splitstreamer2_tb.uut.in.sck
+splitstreamer2_tb.uut.in.sd
+splitstreamer2_tb.uut.in.ws
+splitstreamer2_tb.uut.in.wsd
+splitstreamer2_tb.uut.in.wsdd
+splitstreamer2_tb.uut.in.wsp
+splitstreamer2_tb.uut.in.data_left_enable
+splitstreamer2_tb.uut.in.data_right_enable
+@22
+splitstreamer2_tb.uut.in.shift_reg[31:0]
+splitstreamer2_tb.uut.fifo_in_data_left[31:0]
+splitstreamer2_tb.uut.fifo_in_data_right[31:0]
+splitstreamer2_tb.uut.fifo_out_data_left[31:0]
+splitstreamer2_tb.uut.fifo_out_data_right[31:0]
+splitstreamer2_tb.uut.fifo_out_data_left_reverse[31:0]
+splitstreamer2_tb.uut.fifo_out_data_right_reverse[31:0]
+@28
+splitstreamer2_tb.uut.out.clk
+splitstreamer2_tb.uut.out.rst
+splitstreamer2_tb.uut.out.data_biphase
+@22
+splitstreamer2_tb.uut.out.bit_counter[5:0]
+splitstreamer2_tb.uut.out.frame_counter[8:0]
+@c00029
+splitstreamer2_tb.uut.out.sample_rate_code[3:0]
+@28
+(0)splitstreamer2_tb.uut.out.sample_rate_code[3:0]
+(1)splitstreamer2_tb.uut.out.sample_rate_code[3:0]
+(2)splitstreamer2_tb.uut.out.sample_rate_code[3:0]
+(3)splitstreamer2_tb.uut.out.sample_rate_code[3:0]
+@1401209
+-group_end
+@22
+splitstreamer2_tb.uut.out.channel_status[23:0]
+splitstreamer2_tb.uut.out.channel_status_shift[23:0]
+splitstreamer2_tb.uut.out.data_out_buffer[7:0]
+splitstreamer2_tb.uut.out.data_in_buffer[23:0]
+@28
+splitstreamer2_tb.uut.out.parity
+[pattern_trace] 1
+[pattern_trace] 0
