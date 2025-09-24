@@ -5,6 +5,7 @@ module fifo #(
 (
     input wire rst,
     input wire clk,
+    input wire fclk,
     input wire write_en,
     input wire read_en,
     input wire [WORDSIZE-1:0] data_left_in,
@@ -33,7 +34,7 @@ module fifo #(
             count  <= 0;
             data_left_out  <= 0;
             data_right_out <= 0;
-        end else begin
+        end else if (fclk_p == 1'b0 && fclk == 1'b0) begin
             // Write
             if (write_en && !full) begin
                 left_mem[wr_ptr]  <= data_left_in;
@@ -53,6 +54,24 @@ module fifo #(
                 default: count <= count;   // No change or simultaneous read/write
             endcase
         end
+    end
+
+    reg fclk_d;
+    reg fclk_dd;
+    reg fclk_p; 
+
+    always @(posedge clk) begin
+        if (rst) begin
+            fclk_d <= 0;
+            fclk_dd <= 0;
+        end else begin
+            fclk_d <= fclk;
+            fclk_dd <= fclk_d;
+        end
+    end
+
+    always @(*) begin
+        fclk_p <= fclk_dd ^ fclk_d;
     end
 
 endmodule

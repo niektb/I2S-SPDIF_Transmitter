@@ -1,4 +1,4 @@
-//`define SIM
+`define SIM
 
 module splitstreamer2 (
     input wire pin_i2s_bclk_pll, // at some point, this should become the PLL output
@@ -73,7 +73,8 @@ fifo #(
     .DEPTH(16)
 ) buffer (
     .rst(smu_rst), // Assuming no reset for simplicity
-    .clk(pin_i2s_fclk),
+    .clk(clk),
+    .fclk(pin_i2s_fclk),
     .write_en(smu_write_en), // Always write for this example
     .read_en(smu_read_en),  // No read operation in this example
     .data_left_in(fifo_in_data_left),

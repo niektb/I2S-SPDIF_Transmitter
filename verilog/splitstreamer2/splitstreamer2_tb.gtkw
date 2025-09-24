@@ -1,21 +1,21 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Sun Sep 21 14:29:26 2025
+[*] Wed Sep 24 07:04:30 2025
 [*]
-[dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.vcd"
-[dumpfile_mtime] "Sun Sep 21 14:27:43 2025"
-[dumpfile_size] 191851
-[savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.gtkw"
-[timestart] 23882000
+[dumpfile] "C:\Users\Niek.tenBrinke\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.vcd"
+[dumpfile_mtime] "Wed Sep 24 06:55:19 2025"
+[dumpfile_size] 203941
+[savefile] "C:\Users\Niek.tenBrinke\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.gtkw"
+[timestart] 11971000
 [size] 2560 1369
-[pos] -347 -347
-*-20.109957 23400000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] 1911 -9
+*-17.995655 13000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] splitstreamer2_tb.
 [treeopen] splitstreamer2_tb.uut.
 [sst_width] 197
 [signals_width] 368
 [sst_expanded] 1
-[sst_vpaned_height] 422
+[sst_vpaned_height] 526
 @22
 splitstreamer2_tb.sent_right[31:0]
 splitstreamer2_tb.sent_left[31:0]
@@ -51,14 +51,18 @@ splitstreamer2_tb.uut.fifo_in_data_right[31:0]
 splitstreamer2_tb.uut.fifo_out_data_left[31:0]
 splitstreamer2_tb.uut.fifo_out_data_right[31:0]
 @28
+splitstreamer2_tb.uut.buffer.fclk
+splitstreamer2_tb.uut.buffer.fclk_d
+splitstreamer2_tb.uut.buffer.fclk_dd
+splitstreamer2_tb.uut.buffer.fclk_p
 splitstreamer2_tb.uut.out.clk
 splitstreamer2_tb.uut.out.rst
 splitstreamer2_tb.uut.out.data_biphase
 @22
 splitstreamer2_tb.uut.out.bit_counter[5:0]
-@800023
+@c00023
 splitstreamer2_tb.uut.out.frame_counter[8:0]
-@29
+@28
 (0)splitstreamer2_tb.uut.out.frame_counter[8:0]
 (1)splitstreamer2_tb.uut.out.frame_counter[8:0]
 (2)splitstreamer2_tb.uut.out.frame_counter[8:0]
@@ -68,7 +72,7 @@ splitstreamer2_tb.uut.out.frame_counter[8:0]
 (6)splitstreamer2_tb.uut.out.frame_counter[8:0]
 (7)splitstreamer2_tb.uut.out.frame_counter[8:0]
 (8)splitstreamer2_tb.uut.out.frame_counter[8:0]
-@1001201
+@1401201
 -group_end
 @c00028
 splitstreamer2_tb.uut.out.sample_rate_code[3:0]
