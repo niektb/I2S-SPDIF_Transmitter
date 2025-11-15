@@ -35,7 +35,7 @@ wire optical_out;
 
 assign pin_opt1 = optical_out; // SPDIF output to pin_opt1
 assign pin_opt2 = optical_out; // SPDIF output to pin_opt2
-assign pin_i2s_out_data = clk; // I2S output to pinheader
+assign pin_i2s_out_data = optical_out; // I2S output to pinheader
 assign pin_i2s_out_fclk = pin_i2s_fclk; // I2S frame clock output
 assign pin_i2s_out_bclk = pin_i2s_bclk; // I2S bit clock output
 
@@ -198,7 +198,7 @@ module system_management_unit
             
     assign read_en = ~empty && state_fclk; // Allow read if not empty and state is set
     assign write_en = ~full && state_fclk; // Allow write if not full and state is set
-    assign red = user_sw_ff[1]; // Red LED indicates lock status
+    assign red = rst; // Red LED indicates lock status
     assign blue = red; // Red LED indicates lock status
     assign green = red; // Red LED indicates lock status
 
