@@ -1,4 +1,4 @@
-`define SIM
+//`define SIM
 
 module splitstreamer2 (
     input wire pin_i2s_bclk_pll, // at some point, this should become the PLL output
@@ -12,6 +12,7 @@ module splitstreamer2 (
     output wire pin_opt1,
     output wire pin_opt2,
     output wire pin_i2s_out_data, // This is the SPDIF output to pinheader
+    output wire pin_i2s_out_bclk,
     output wire pin_i2s_out_fclk
 );
 
@@ -28,14 +29,15 @@ wire [31:0] fifo_out_data_left;
 wire [31:0] fifo_out_data_right;
 //wire [31:0] fifo_out_data_left_reverse;
 //wire [31:0] fifo_out_data_right_reverse;
-wire smu_validity;
 
+wire smu_validity;
 wire optical_out;
 
 assign pin_opt1 = optical_out; // SPDIF output to pin_opt1
 assign pin_opt2 = optical_out; // SPDIF output to pin_opt2
-assign pin_i2s_out_data = optical_out; // I2S output to pinheader
+assign pin_i2s_out_data = clk; // I2S output to pinheader
 assign pin_i2s_out_fclk = pin_i2s_fclk; // I2S frame clock output
+assign pin_i2s_out_bclk = pin_i2s_bclk; // I2S bit clock output
 
 `ifndef SIM
 SB_PLL40_CORE #(

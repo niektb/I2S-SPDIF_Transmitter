@@ -1,15 +1,15 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Wed Sep 24 07:04:30 2025
+[*] Sat Nov 08 09:21:51 2025
 [*]
-[dumpfile] "C:\Users\Niek.tenBrinke\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.vcd"
-[dumpfile_mtime] "Wed Sep 24 06:55:19 2025"
-[dumpfile_size] 203941
-[savefile] "C:\Users\Niek.tenBrinke\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.gtkw"
-[timestart] 11971000
+[dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.vcd"
+[dumpfile_mtime] "Sat Nov 08 09:18:18 2025"
+[dumpfile_size] 209835
+[savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.gtkw"
+[timestart] 0
 [size] 2560 1369
-[pos] 1911 -9
-*-17.995655 13000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[pos] -1 -1
+*-20.531061 1628000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] splitstreamer2_tb.
 [treeopen] splitstreamer2_tb.uut.
 [sst_width] 197
@@ -60,7 +60,7 @@ splitstreamer2_tb.uut.out.rst
 splitstreamer2_tb.uut.out.data_biphase
 @22
 splitstreamer2_tb.uut.out.bit_counter[5:0]
-@c00023
+@c00022
 splitstreamer2_tb.uut.out.frame_counter[8:0]
 @28
 (0)splitstreamer2_tb.uut.out.frame_counter[8:0]
@@ -72,7 +72,7 @@ splitstreamer2_tb.uut.out.frame_counter[8:0]
 (6)splitstreamer2_tb.uut.out.frame_counter[8:0]
 (7)splitstreamer2_tb.uut.out.frame_counter[8:0]
 (8)splitstreamer2_tb.uut.out.frame_counter[8:0]
-@1401201
+@1401200
 -group_end
 @c00028
 splitstreamer2_tb.uut.out.sample_rate_code[3:0]
@@ -90,5 +90,7 @@ splitstreamer2_tb.uut.out.data_out_buffer[7:0]
 splitstreamer2_tb.uut.out.data_in_buffer[23:0]
 @28
 splitstreamer2_tb.uut.out.parity
+@29
+splitstreamer2_tb.uut.out.validity
 [pattern_trace] 1
 [pattern_trace] 0

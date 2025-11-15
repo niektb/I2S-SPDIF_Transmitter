@@ -26,7 +26,50 @@ module splitstreamer2_tb;
     // Clocks
     always #20 pin_i2s_bclk_pll = (pin_i2s_bclk_pll === 1'b0);  // 25 MHz PLL output clock
     always #40 pin_i2s_bclk = (pin_i2s_bclk === 1'b0);          // 12.5 MHz I2S bit clock
-    always #2560 pin_i2s_fclk = (pin_i2s_fclk === 1'b0);
+
+    // Frame clock divider controls
+    reg [5:0] bit_div_cnt = 0;
+    reg       fclk_div_enabled = 0;
+    localparam integer HALF_DIV = 32; // toggle every 32 bit clocks -> full LRCLK = 64 bit clocks
+
+    // Generate initial glitches, then enable synchronous division from bit clock
+    initial begin
+        // start values
+        pin_i2s_fclk = 0;
+        fclk_div_enabled = 0;
+        bit_div_cnt = 0;
+
+        // initial delay before glitches
+        #1500;
+
+        // Produce a small glitch sequence (not synchronized to bitclock) to simulate startup jitter
+        pin_i2s_fclk = 1;
+        #80;
+        pin_i2s_fclk = 0; // short glitch
+        #100;
+        pin_i2s_fclk = 1;
+        #50;
+        pin_i2s_fclk = 0;
+
+        // Now wait for the next negedge of bit clock to start synchronous division
+        @(negedge pin_i2s_bclk);
+        bit_div_cnt = 0;
+        // align the frame clock phase: set to 0 and enable divider; first toggle will happen after HALF_DIV negedges
+        pin_i2s_fclk = 0;
+        fclk_div_enabled = 1;
+    end
+
+    // Synchronous divider: driven by bit clock, toggles frame clock every HALF_DIV negedges
+    always @(negedge pin_i2s_bclk) begin
+        if (fclk_div_enabled) begin
+            if (bit_div_cnt == HALF_DIV - 1) begin
+                pin_i2s_fclk <= ~pin_i2s_fclk;
+                bit_div_cnt <= 0;
+            end else begin
+                bit_div_cnt <= bit_div_cnt + 1;
+            end
+        end
+    end
 
     reg [0:63] shift_data;
     reg [31:0] sent_left, sent_right;
@@ -39,7 +82,7 @@ module splitstreamer2_tb;
         // Reset the DUT
         pin_user_sw = 0; // Assert reset
         // Wait for PLL lock (simulated)
-        #100;
+        #10;
         // Release reset
         pin_user_sw = 1;
 
