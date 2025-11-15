@@ -1,21 +1,21 @@
 [*]
 [*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
-[*] Sat Nov 08 09:21:51 2025
+[*] Sat Nov 15 12:02:44 2025
 [*]
 [dumpfile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.vcd"
-[dumpfile_mtime] "Sat Nov 08 09:18:18 2025"
-[dumpfile_size] 209835
+[dumpfile_mtime] "Sat Nov 15 12:01:30 2025"
+[dumpfile_size] 234388
 [savefile] "C:\GitHub\I2S-SPDIF_Transmitter\verilog\splitstreamer2\splitstreamer2_tb.gtkw"
 [timestart] 0
-[size] 2560 1369
-[pos] -1 -1
-*-20.531061 1628000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[size] 1278 1360
+[pos] -190 -1
+*-18.086624 7600000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [treeopen] splitstreamer2_tb.
 [treeopen] splitstreamer2_tb.uut.
 [sst_width] 197
 [signals_width] 368
 [sst_expanded] 1
-[sst_vpaned_height] 526
+[sst_vpaned_height] 523
 @22
 splitstreamer2_tb.sent_right[31:0]
 splitstreamer2_tb.sent_left[31:0]
@@ -90,7 +90,12 @@ splitstreamer2_tb.uut.out.data_out_buffer[7:0]
 splitstreamer2_tb.uut.out.data_in_buffer[23:0]
 @28
 splitstreamer2_tb.uut.out.parity
-@29
 splitstreamer2_tb.uut.out.validity
+splitstreamer2_tb.uut.smu.user_sw_ff[1:0]
+splitstreamer2_tb.uut.smu.button_pressed
+splitstreamer2_tb.uut.smu.pin_user_sw
+splitstreamer2_tb.uut.smu.state_fclk
+@29
+splitstreamer2_tb.uut.smu.user_sw_debounced
 [pattern_trace] 1
 [pattern_trace] 0

@@ -180,15 +180,19 @@ module system_management_unit
         user_sw_ff <= {user_sw_ff[0], pin_user_sw};
     end     
 
+    reg [1:0] clk_edge_cnt = 2'b00;
     reg state_bclk = 0;
     // monitor that a full bclk period has passed before lifting reset
     always @(posedge clk) begin
         if (user_sw_ff[1] == 1'b0 && user_sw_ff[0] == 1'b1) begin
             state_bclk <= 0;
+            clk_edge_cnt <= 2'b00;
         end else begin
-            if (state_bclk == 0 && user_sw_ff[1] == 1) begin
-                state_bclk <= 1; // Allow write after first bclk period
-            end
+            if (clk_edge_cnt < 3'd4)
+                clk_edge_cnt <= clk_edge_cnt + 1'b1;
+            
+            if (clk_edge_cnt == 3'd3)
+                state_bclk <= 1; // Clear state on first bclk rising edge
         end
     end 
             
